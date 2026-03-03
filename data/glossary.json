@@ -1,0 +1,47 @@
+[
+  {
+    "id": "g-1",
+    "badge": "GLOSSARY",
+    "title": "TTV (Time to Value)",
+    "subtitle": "핵심 지표",
+    "description": "사용자가 첫 방문 후 가치 있는 결과를 체감하기까지 걸리는 시간.",
+    "facts": ["초기 온보딩 핵심", "짧을수록 유지율 개선", "MVP 우선 지표"],
+    "sihunView": "MVP 단계에서는 기능 수보다 TTV를 줄이는 설계가 제품 생존에 더 직접적이다."
+  },
+  {
+    "id": "g-2",
+    "badge": "GLOSSARY",
+    "title": "Information Scent",
+    "subtitle": "탐색 용어",
+    "description": "다음 클릭이 유의미할 것이라는 신호를 텍스트/레이블/배치로 전달하는 정도.",
+    "facts": ["명확한 라벨", "예측 가능한 위치", "일관된 버튼 언어"],
+    "sihunView": "정보 냄새가 약하면 사용자 실수보다 인터페이스 책임일 가능성이 높다."
+  },
+  {
+    "id": "g-3",
+    "badge": "GLOSSARY",
+    "title": "Progressive Disclosure",
+    "subtitle": "정보 설계",
+    "description": "처음에는 핵심만 보여주고, 필요 시 상세 정보를 단계적으로 펼치는 방식.",
+    "facts": ["초기 인지 부담 감소", "전문 사용자 확장 가능", "모바일 대응 유리"],
+    "sihunView": "정보 과잉을 피하려면 숨기는 게 아니라 순서를 설계해야 한다."
+  },
+  {
+    "id": "g-4",
+    "badge": "GLOSSARY",
+    "title": "Signal to Noise Ratio",
+    "subtitle": "시각화 품질",
+    "description": "의미 있는 데이터(신호) 대비 불필요한 장식/중복 정보(노이즈)의 비율.",
+    "facts": ["장식 최소화", "중복 텍스트 제거", "핵심 대비 강조"],
+    "sihunView": "미니멀 디자인의 핵심은 비우는 게 아니라 신호 밀도를 높이는 것이다."
+  },
+  {
+    "id": "g-5",
+    "badge": "GLOSSARY",
+    "title": "Actionable Insight",
+    "subtitle": "실행 용어",
+    "description": "데이터 해석 결과가 바로 실행 가능한 선택지로 연결되는 통찰.",
+    "facts": ["행동 권고 포함", "책임 주체 명확화", "기한 제시"],
+    "sihunView": "좋은 인사이트는 해석으로 끝나지 않고 누가 무엇을 언제 할지로 닫혀야 한다."
+  }
+]

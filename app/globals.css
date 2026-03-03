@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --fg: #111827;
+  --line: #e5e7eb;
+  --badge: #f3f4f6;
+  --point: #1d4ed8;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(to right, rgba(17, 24, 39, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  color: var(--fg);
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.info-card {
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.badge {
+  border: 1px solid var(--line);
+  background: var(--badge);
+}
+
+.mono {
+  font-family: var(--font-ibm-plex-mono), monospace;
+}
