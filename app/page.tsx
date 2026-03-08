@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Home() {
   const menus = [
     {
-      href: "/timeline",
+      href: "/history",
       title: "역사",
-      desc: "시각화 언어가 어떻게 발전했는지 연대기 흐름으로 확인",
+      desc: "튜링 테스트부터 에이전트 시대까지 AI의 흐름을 가로형 타임라인으로 확인",
     },
     {
       href: "/speed",

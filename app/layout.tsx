@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const navItems = [
-    { href: "/timeline", label: "역사" },
+    { href: "/history", label: "역사" },
     { href: "/speed", label: "속도체험" },
     { href: "/future", label: "미래" },
     { href: "/glossary", label: "용어" },

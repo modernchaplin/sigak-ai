@@ -1,0 +1,262 @@
+[
+  {
+    "id": "turing-test",
+    "year": 1950,
+    "date": "1950.10",
+    "title": "튜링 테스트",
+    "summary": "기계가 사람처럼 대화할 수 있는가를 묻는 첫 기준이 제시됐다.",
+    "detail": "앨런 튜링은 \"기계가 생각할 수 있는가\"라는 질문 대신, 인간과의 대화에서 구별되지 않는지를 묻는 실용적 기준을 제안했다. 이후 AI를 평가하는 대표적인 출발점이 됐다.",
+    "tags": ["철학", "출발점"],
+    "sources": [
+      {
+        "label": "Computing Machinery and Intelligence",
+        "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "dartmouth",
+    "year": 1956,
+    "date": "1956.08",
+    "title": "다트머스 회의",
+    "summary": "인공지능이라는 이름이 공식적으로 등장하며 하나의 연구 분야가 만들어졌다.",
+    "detail": "존 매카시, 마빈 민스키 등 연구자들이 다트머스 여름 연구 프로젝트를 열며 'Artificial Intelligence'라는 용어를 본격적으로 사용했다. AI는 여기서부터 독립된 연구 주제로 정리되기 시작했다.",
+    "tags": ["탄생", "학문"],
+    "sources": [
+      {
+        "label": "Dartmouth Workshop Archive",
+        "url": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "perceptron",
+    "year": 1957,
+    "date": "1957",
+    "title": "퍼셉트론",
+    "summary": "초기 신경망 모델이 등장하며 기계가 패턴을 학습할 수 있다는 기대가 커졌다.",
+    "detail": "프랭크 로젠블랫의 퍼셉트론은 입력을 분류하는 단층 신경망 모델이다. 제한이 분명했지만, 이후 딥러닝으로 이어지는 신경망 계열 연구의 상징적 출발점이 됐다.",
+    "tags": ["신경망", "학습"],
+    "sources": [
+      {
+        "label": "Perceptron Overview",
+        "url": "https://www.britannica.com/technology/perceptron"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "ai-winter-1",
+    "year": 1974,
+    "date": "1974",
+    "title": "1차 AI 겨울",
+    "summary": "기대에 비해 성과가 더디자 투자와 관심이 빠르게 식기 시작했다.",
+    "detail": "번역, 추론, 일반 문제 해결 등 초기 AI가 약속한 수준에 도달하지 못하면서 연구비와 사회적 기대가 함께 줄었다. AI 겨울은 기술보다 과도한 기대의 반작용이 얼마나 큰지 보여준 사례다.",
+    "tags": ["침체", "과열반작용"],
+    "sources": [
+      {
+        "label": "AI Winter Summary",
+        "url": "https://en.wikipedia.org/wiki/AI_winter"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "backprop",
+    "year": 1986,
+    "date": "1986",
+    "title": "역전파 재발견",
+    "summary": "다층 신경망을 학습시키는 실용적 방법이 다시 주목받았다.",
+    "detail": "Rumelhart, Hinton, Williams의 논문은 오차 역전파를 이용해 은닉층이 있는 신경망을 학습할 수 있음을 널리 알렸다. 이후 딥러닝 부흥기의 핵심 기반으로 이어졌다.",
+    "tags": ["신경망", "학습법"],
+    "sources": [
+      {
+        "label": "Learning representations by back-propagating errors",
+        "url": "https://www.nature.com/articles/323533a0"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "deep-blue",
+    "year": 1997,
+    "date": "1997.05",
+    "title": "딥 블루",
+    "summary": "체스 챔피언을 이기며 AI가 특정 영역에서 인간을 넘을 수 있음을 보여줬다.",
+    "detail": "IBM의 딥 블루가 가리 카스파로프를 꺾으면서 AI는 다시 대중의 관심을 받았다. 범용 지능은 아니었지만, 규칙이 명확한 문제에서 계산과 탐색이 얼마나 강력한지 증명했다.",
+    "tags": ["게임", "상징적승리"],
+    "sources": [
+      {
+        "label": "IBM Deep Blue",
+        "url": "https://www.ibm.com/history/deep-blue"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "deep-learning-resurgence",
+    "year": 2006,
+    "date": "2006",
+    "title": "딥러닝 재점화",
+    "summary": "딥 신경망을 다시 학습시키려는 시도가 현실적인 성과로 이어지기 시작했다.",
+    "detail": "힌턴 연구진은 깊은 신경망을 단계적으로 학습시키는 방식으로 딥러닝의 가능성을 다시 끌어올렸다. 이후 GPU, 데이터, 알고리즘이 맞물리며 본격적 도약의 토대가 된다.",
+    "tags": ["딥러닝", "재부상"],
+    "sources": [
+      {
+        "label": "A fast learning algorithm for deep belief nets",
+        "url": "https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "imagenet",
+    "year": 2009,
+    "date": "2009",
+    "title": "ImageNet",
+    "summary": "대규모 라벨 데이터셋이 생기며 컴퓨터 비전 학습의 기반이 크게 바뀌었다.",
+    "detail": "ImageNet은 수백만 장의 이미지를 체계적으로 정리한 대형 데이터셋이다. 대규모 데이터가 있어야 딥러닝이 힘을 발휘한다는 점을 산업과 연구 모두에게 각인시켰다.",
+    "tags": ["데이터", "비전"],
+    "sources": [
+      {
+        "label": "ImageNet Project",
+        "url": "https://image-net.org/index.php"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "alexnet",
+    "year": 2012,
+    "date": "2012.09",
+    "title": "AlexNet",
+    "summary": "딥러닝이 전통적 컴퓨터 비전 기법을 크게 앞서기 시작한 전환점이었다.",
+    "detail": "AlexNet은 2012 ImageNet 대회에서 압도적인 성능 차이를 보이며 딥러닝 시대를 본격적으로 열었다. 이후 음성, 번역, 추천 등 다른 분야도 빠르게 신경망 중심으로 이동했다.",
+    "tags": ["전환점", "비전"],
+    "sources": [
+      {
+        "label": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "alphago",
+    "year": 2016,
+    "date": "2016.03",
+    "title": "AlphaGo",
+    "summary": "바둑에서 인간 최고수를 꺾으며 AI의 전략적 추론 능력을 각인시켰다.",
+    "detail": "DeepMind의 AlphaGo가 이세돌 9단을 이기며 AI에 대한 사회적 인식을 크게 바꿨다. 딥러닝과 강화학습의 결합이 얼마나 강력할 수 있는지를 전 세계가 체감한 사건이었다.",
+    "tags": ["강화학습", "바둑"],
+    "sources": [
+      {
+        "label": "Nature: Mastering the game of Go",
+        "url": "https://www.nature.com/articles/nature16961"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "transformer",
+    "year": 2017,
+    "date": "2017.06",
+    "title": "Transformer",
+    "summary": "오늘의 생성형 AI를 가능하게 한 핵심 아키텍처가 등장했다.",
+    "detail": "Attention 메커니즘만으로 시퀀스를 처리하는 Transformer는 자연어 처리의 판을 바꿨다. 이후 GPT, Claude, Gemini 등 대형 언어모델의 공통 기반이 된다.",
+    "tags": ["LLM", "아키텍처"],
+    "sources": [
+      {
+        "label": "Attention Is All You Need",
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "gpt3",
+    "year": 2020,
+    "date": "2020.06",
+    "title": "GPT-3",
+    "summary": "대규모 언어모델이 소수 예시만으로 다양한 작업을 수행할 수 있음을 보여줬다.",
+    "detail": "GPT-3는 규모의 확장이 성능을 크게 끌어올릴 수 있음을 보여주며 LLM 경쟁을 가속했다. 프롬프트만으로 번역, 요약, 작성이 가능하다는 인식이 퍼지기 시작했다.",
+    "tags": ["LLM", "스케일링"],
+    "sources": [
+      {
+        "label": "OpenAI: GPT-3 Paper",
+        "url": "https://arxiv.org/abs/2005.14165"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "chatgpt",
+    "year": 2022,
+    "date": "2022.11",
+    "title": "ChatGPT",
+    "summary": "대화형 AI가 대중 서비스로 폭발하며 AI가 일상 도구로 들어왔다.",
+    "detail": "ChatGPT는 AI를 연구자와 개발자만의 도구에서 일반 사용자의 인터페이스로 바꿨다. 생성형 AI 붐, 제품화 경쟁, 업무 자동화 논의가 여기서부터 폭발적으로 커졌다.",
+    "tags": ["대중화", "생성형AI"],
+    "sources": [
+      {
+        "label": "OpenAI: Introducing ChatGPT",
+        "url": "https://openai.com/blog/chatgpt"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "reasoning-ai-nobel",
+    "year": 2024,
+    "date": "2024",
+    "title": "추론형 AI와 AI 노벨상",
+    "summary": "더 오래 생각하는 모델과 AI 연구의 학문적 위상이 함께 부각된 해였다.",
+    "detail": "추론형 모델 흐름이 본격화되면서 '빠른 생성'을 넘어 '생각하는 과정'이 중요한 경쟁 축으로 떠올랐다. 같은 해 AI 연구의 기반을 만든 인물들이 노벨 물리학상으로 조명되며, AI의 역사적 위상도 한 단계 올라갔다.",
+    "tags": ["추론", "전환기"],
+    "sources": [
+      {
+        "label": "OpenAI o1",
+        "url": "https://openai.com/index/learning-to-reason-with-llms/"
+      },
+      {
+        "label": "Nobel Prize in Physics 2024",
+        "url": "https://www.nobelprize.org/prizes/physics/2024/press-release/"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "deepseek-shock",
+    "year": 2025,
+    "date": "2025",
+    "title": "딥시크 충격",
+    "summary": "고성능 AI를 더 낮은 비용 구조로 구현할 수 있다는 인식이 확산됐다.",
+    "detail": "DeepSeek 계열 모델은 성능 경쟁이 곧 비용 구조 경쟁이기도 하다는 점을 강하게 드러냈다. AI 산업의 중심 화두가 단순 성능에서 효율, 공개 전략, 생태계 확장으로 이동하는 계기가 됐다.",
+    "tags": ["효율", "오픈전략"],
+    "sources": [
+      {
+        "label": "DeepSeek",
+        "url": "https://www.deepseek.com/"
+      }
+    ],
+    "importance": "main"
+  },
+  {
+    "id": "year-of-agents",
+    "year": 2026,
+    "date": "2026",
+    "title": "에이전트의 해",
+    "summary": "대화형 AI를 넘어, 실제로 일을 실행하는 에이전트 흐름이 본격화되고 있다.",
+    "detail": "2026년의 핵심 키워드는 단순 응답이 아니라 실행이다. AI는 문서를 읽고, 도구를 호출하고, 웹과 앱을 조작하며 업무 단위를 수행하는 방향으로 빠르게 확장되고 있다.",
+    "tags": ["에이전트", "진행중"],
+    "sources": [
+      {
+        "label": "OpenAI Agents",
+        "url": "https://openai.com/"
+      }
+    ],
+    "importance": "main"
+  }
+]
