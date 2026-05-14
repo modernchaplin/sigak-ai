@@ -7,6 +7,22 @@
       "role": "AI의 역사, 타임라인, 과거-현재-미래 흐름을 보여주는 축",
       "topics": [
         {
+          "id": "ai-history",
+          "title": "AI 역사",
+          "axis": "시간",
+          "summary": "튜링 테스트부터 생성형 AI까지 핵심 사건을 시간순으로 읽는다.",
+          "description": "AI가 어떤 질문과 사건을 거치며 지금의 형태로 발전했는지 보는 입구.",
+          "sections": {
+            "what": "AI 역사는 기계가 생각할 수 있는가라는 질문에서 시작해 학습, 추론, 생성, 에이전트로 확장된 흐름이다.",
+            "why": "AI를 현재의 제품만으로 보면 변화의 속도와 방향을 놓치기 쉽다.",
+            "sigak": "SIGAK.AI는 AI 역사를 과거 사건의 목록이 아니라 미래를 읽기 위한 시간 감각으로 본다.",
+            "flow": "튜링 테스트 → 다트머스 회의 → 딥러닝 → AlphaGo → ChatGPT → 에이전트",
+            "question": "AI의 역사는 기술의 발전사일까, 인간이 지능을 다시 정의해 온 과정일까?"
+          },
+          "tags": ["역사", "타임라인", "흐름"],
+          "relatedIds": ["agi-timeline", "alphago", "ai-speed"]
+        },
+        {
           "id": "alphago",
           "title": "AlphaGo",
           "axis": "시간",
@@ -26,17 +42,27 @@
           "id": "agi-timeline",
           "title": "AGI 타임라인",
           "axis": "시간",
-          "summary": "AGI 논의가 어디서 시작해 어떤 기대와 우려로 이어지는지 정리한다.",
-          "description": "AGI를 둘러싼 연구, 기업 전략, 사회적 기대가 시간에 따라 어떻게 달라졌는지 보는 주제.",
+          "summary": "AGI는 갑자기 등장하는 하나의 사건이 아니라, AI가 점점 더 넓은 능력을 획득해가는 과정이다.",
+          "description": "AGI를 하나의 날짜가 아니라 AI 능력 범위가 넓어지는 긴 흐름으로 읽는 전용 화면.",
           "sections": {
-            "what": "AGI는 인간 수준 또는 그 이상의 일반적 문제 해결 능력을 가진 AI를 뜻한다.",
-            "why": "AGI 논의는 기술의 목표뿐 아니라 안전, 경제, 사회 제도까지 함께 흔든다.",
-            "sigak": "SIGAK.AI는 AGI를 단일 사건이 아니라 긴 시간축 위에서 커지는 질문으로 본다.",
-            "flow": "좁은 AI → 대규모 모델 → 추론형 모델 → 에이전트 → AGI 논의",
-            "question": "AGI는 도착점일까, 아니면 우리가 기술을 이해하기 위해 만든 임시 이름일까?"
+            "what": "AGI는 특정한 한 가지 일을 잘하는 AI를 넘어, 여러 영역의 문제를 스스로 이해하고 해결할 수 있는 일반적 지능을 뜻한다.",
+            "why": "AGI 논의는 단순히 더 똑똑한 챗봇의 문제가 아니다. 일, 교육, 과학, 경제, 안전의 기준이 함께 바뀔 수 있는 전환점이기 때문이다.",
+            "sigak": "AGI 논의에서 중요한 것은 정확히 몇 년도에 AGI가 오느냐만이 아니다.\n더 중요한 것은 AI가 인간의 예상보다 훨씬 빠르게 능력의 범위를 넓혀가고 있다는 점이다.\n우리는 AGI를 하나의 날짜가 아니라, 이미 진행 중인 방향성으로 바라볼 필요가 있다.",
+            "flow": "AI는 계산과 규칙 기반 시스템에서 출발해, 데이터를 학습하는 딥러닝, 인간의 직관을 넘어선 AlphaGo, 대화형 AI인 ChatGPT, 그리고 스스로 일을 수행하는 AI Agent로 확장되고 있다.",
+            "question": "AGI는 어느 날 갑자기 도착하는 사건일까,\n아니면 우리가 이미 통과하고 있는 과정일까?"
           },
           "tags": ["AGI", "미래", "타임라인"],
-          "relatedIds": ["alphago", "tool-or-environment"]
+          "relatedIds": ["ai-speed", "linear-vs-exponential", "tool-or-environment"],
+          "timeline": [
+            { "year": "1950", "label": "튜링 테스트" },
+            { "year": "1956", "label": "다트머스 회의" },
+            { "year": "2012", "label": "AlexNet" },
+            { "year": "2016", "label": "AlphaGo" },
+            { "year": "2022", "label": "ChatGPT" },
+            { "year": "2024", "label": "멀티모달 AI" },
+            { "year": "2025~", "label": "AI Agent" },
+            { "year": "미래", "label": "AGI 논의" }
+          ]
         },
         {
           "id": "ai-speed",
