@@ -7,29 +7,84 @@
       "role": "AI의 역사, 타임라인, 과거-현재-미래 흐름을 보여주는 축",
       "topics": [
         {
-          "id": "ai-history",
-          "title": "AI 역사",
-          "summary": "튜링 테스트부터 ChatGPT 이후까지 핵심 사건을 시간순으로 본다."
+          "id": "alphago",
+          "title": "AlphaGo",
+          "axis": "시간",
+          "summary": "AI가 인간 최고수의 직관을 넘어선 상징적 사건",
+          "description": "2016년 Google DeepMind의 AlphaGo가 이세돌 9단과의 대국에서 승리한 사건.",
+          "sections": {
+            "what": "2016년 Google DeepMind의 AlphaGo가 이세돌 9단과의 대국에서 승리한 사건.",
+            "why": "AI가 단순 계산을 넘어, 인간 전문가도 예상하지 못한 선택을 할 수 있음을 보여줬다.",
+            "sigak": "AlphaGo의 충격은 AI가 인간을 이겼다는 사실에만 있지 않다. 진짜 의미는 AI가 인간의 직관 바깥에서 새로운 가능성을 탐색하기 시작했다는 점에 있다.",
+            "flow": "AlphaGo → AlphaGo Master → AlphaZero → 강화학습 → 자기대국 → 과학 발견",
+            "question": "인간이 이해하지 못하는 답을 AI가 낸다면, 우리는 그것을 어떻게 받아들여야 할까?"
+          },
+          "tags": ["강화학습", "DeepMind", "전환점"],
+          "relatedIds": ["demis-hassabis", "ai-speed", "tool-or-environment"]
         },
         {
           "id": "agi-timeline",
           "title": "AGI 타임라인",
-          "summary": "AGI 논의가 어디서 시작해 어떤 기대와 우려로 이어지는지 정리한다."
+          "axis": "시간",
+          "summary": "AGI 논의가 어디서 시작해 어떤 기대와 우려로 이어지는지 정리한다.",
+          "description": "AGI를 둘러싼 연구, 기업 전략, 사회적 기대가 시간에 따라 어떻게 달라졌는지 보는 주제.",
+          "sections": {
+            "what": "AGI는 인간 수준 또는 그 이상의 일반적 문제 해결 능력을 가진 AI를 뜻한다.",
+            "why": "AGI 논의는 기술의 목표뿐 아니라 안전, 경제, 사회 제도까지 함께 흔든다.",
+            "sigak": "SIGAK.AI는 AGI를 단일 사건이 아니라 긴 시간축 위에서 커지는 질문으로 본다.",
+            "flow": "좁은 AI → 대규모 모델 → 추론형 모델 → 에이전트 → AGI 논의",
+            "question": "AGI는 도착점일까, 아니면 우리가 기술을 이해하기 위해 만든 임시 이름일까?"
+          },
+          "tags": ["AGI", "미래", "타임라인"],
+          "relatedIds": ["alphago", "tool-or-environment"]
         },
         {
           "id": "ai-speed",
           "title": "AI 발전속도 체험",
-          "summary": "AI 변화가 왜 인간의 직관보다 빠르게 느껴지는지 체감한다."
+          "axis": "시간",
+          "summary": "AI 변화가 왜 인간의 직관보다 빠르게 느껴지는지 체감한다.",
+          "description": "AI 발전이 선형적 변화가 아니라 누적과 확산이 겹치는 변화라는 점을 보여주는 주제.",
+          "sections": {
+            "what": "모델 성능, 비용, 도구 확산 속도가 동시에 변하면서 AI 변화는 매우 빠르게 체감된다.",
+            "why": "속도를 이해하지 못하면 변화의 방향도 늦게 읽게 된다.",
+            "sigak": "SIGAK.AI는 AI 시대의 핵심 감각 중 하나를 속도 감각으로 본다.",
+            "flow": "연구 성과 → 제품화 → 대중 사용 → 업무 방식 변화",
+            "question": "우리는 기술이 바뀌는 속도보다 더 빠르게 생각의 방식을 바꿀 수 있을까?"
+          },
+          "tags": ["속도", "변화", "체감"],
+          "relatedIds": ["alphago", "coding", "tool-or-environment"]
         },
         {
           "id": "linear-vs-exponential",
           "title": "선형적 변화 vs 기하급수적 변화",
-          "summary": "AI 시대의 속도를 이해하기 위한 가장 중요한 사고 차이를 본다."
+          "axis": "시간",
+          "summary": "AI 시대의 속도를 이해하기 위한 가장 중요한 사고 차이를 본다.",
+          "description": "변화가 일정하게 쌓이는지, 어느 순간 급격히 커지는지 구분하는 관점.",
+          "sections": {
+            "what": "선형적 변화는 일정한 속도로 늘고, 기하급수적 변화는 누적될수록 폭발적으로 커진다.",
+            "why": "AI 변화는 성능, 데이터, 사용자가 서로를 밀어 올리는 구조를 가진다.",
+            "sigak": "SIGAK.AI는 AI를 이해하려면 속도 자체를 읽는 사고가 필요하다고 본다.",
+            "flow": "작은 개선 → 누적 효과 → 임계점 → 생활 방식 변화",
+            "question": "우리는 여전히 어제의 속도로 내일을 예측하고 있는가?"
+          },
+          "tags": ["변화", "속도", "사고방식"],
+          "relatedIds": ["ai-speed", "tool-or-environment"]
         },
         {
           "id": "ai-future",
           "title": "AI의 미래",
-          "summary": "AI가 앞으로 일, 학습, 창작, 과학에 어떤 변화를 만들지 조망한다."
+          "axis": "시간",
+          "summary": "AI가 앞으로 일, 학습, 창작, 과학에 어떤 변화를 만들지 조망한다.",
+          "description": "AI가 다음 단계에서 어떤 분야로 확장될지 보는 미래 전망 주제.",
+          "sections": {
+            "what": "AI는 대화형 도구를 넘어 실행, 협업, 발견의 시스템으로 확장되고 있다.",
+            "why": "미래를 예측하는 일은 준비해야 할 능력과 질문을 정하는 일이다.",
+            "sigak": "SIGAK.AI는 미래 예측을 정답 맞히기가 아니라 방향 감각을 기르는 일로 본다.",
+            "flow": "챗봇 → 코파일럿 → 에이전트 → 조직 운영과 과학 발견",
+            "question": "AI가 더 많은 일을 할수록 인간은 무엇을 더 잘해야 할까?"
+          },
+          "tags": ["미래", "에이전트", "전망"],
+          "relatedIds": ["coding", "important-capability"]
         }
       ]
     },
@@ -42,37 +97,114 @@
         {
           "id": "sam-altman",
           "title": "Sam Altman",
-          "summary": "OpenAI와 대중적 AI 시대의 속도, 위험, 비전을 함께 상징하는 인물."
+          "axis": "사람",
+          "summary": "OpenAI와 대중적 AI 시대의 속도, 위험, 비전을 함께 상징하는 인물.",
+          "description": "AI 제품화와 AGI 논의의 중심에 있는 인물.",
+          "sections": {
+            "what": "Sam Altman은 OpenAI의 대표로 생성형 AI의 대중화와 AGI 담론을 이끌고 있다.",
+            "why": "그의 발언은 기술 개발뿐 아니라 산업, 규제, 사회적 기대에 영향을 준다.",
+            "sigak": "SIGAK.AI는 인물을 기술의 얼굴이자 시대의 방향을 드러내는 신호로 본다.",
+            "flow": "스타트업 → OpenAI → ChatGPT → AGI와 안전성 논의",
+            "question": "한 기업의 비전이 한 시대의 기술 방향을 얼마나 좌우해도 되는가?"
+          },
+          "tags": ["OpenAI", "AGI", "인물"],
+          "relatedIds": ["agi-timeline", "tool-or-environment"]
         },
         {
           "id": "geoffrey-hinton",
           "title": "Geoffrey Hinton",
-          "summary": "딥러닝의 가능성을 열고, 이후 AI 위험을 강하게 말하기 시작한 연구자."
+          "axis": "사람",
+          "summary": "딥러닝의 가능성을 열고, 이후 AI 위험을 강하게 말하기 시작한 연구자.",
+          "description": "딥러닝의 기반을 만든 대표 연구자 중 한 명.",
+          "sections": {
+            "what": "Geoffrey Hinton은 신경망과 딥러닝 발전에 큰 영향을 준 연구자다.",
+            "why": "그가 기술의 가능성과 위험을 함께 말한다는 점은 AI 시대의 긴장을 보여준다.",
+            "sigak": "SIGAK.AI는 Hinton을 AI 낙관과 경고가 한 인물 안에서 만나는 상징으로 본다.",
+            "flow": "신경망 연구 → 딥러닝 부흥 → 생성형 AI → 위험 경고",
+            "question": "기술을 만든 사람이 두려움을 말할 때 우리는 무엇을 들어야 할까?"
+          },
+          "tags": ["딥러닝", "위험", "연구자"],
+          "relatedIds": ["ai-future", "important-capability"]
         },
         {
           "id": "demis-hassabis",
           "title": "Demis Hassabis",
-          "summary": "게임, 과학, 일반지능을 하나의 문제 해결 흐름으로 연결한 인물."
+          "axis": "사람",
+          "summary": "DeepMind를 이끌며 AI를 과학 발견의 도구로 확장한 인물",
+          "description": "게임, 과학, 일반지능을 하나의 문제 해결 흐름으로 연결해 온 DeepMind의 공동창업자.",
+          "sections": {
+            "what": "Demis Hassabis는 DeepMind를 이끌며 AlphaGo, AlphaFold 등 AI의 가능성을 상징하는 프로젝트를 만들어 왔다.",
+            "why": "그의 작업은 AI가 게임을 넘어 과학 발견과 복잡한 문제 해결로 확장될 수 있음을 보여준다.",
+            "sigak": "SIGAK.AI는 Hassabis를 AI가 단순 자동화를 넘어 인간이 풀지 못한 문제를 탐색하는 방향으로 이동했음을 보여주는 인물로 본다.",
+            "flow": "게임 AI → AlphaGo → AlphaZero → AlphaFold → 과학 발견",
+            "question": "AI가 과학적 발견을 돕는다면, 발견의 주체는 누구라고 말해야 할까?"
+          },
+          "tags": ["DeepMind", "AlphaGo", "과학"],
+          "relatedIds": ["alphago", "ai-future", "tool-or-environment"]
         },
         {
           "id": "ilya-sutskever",
           "title": "Ilya Sutskever",
-          "summary": "대규모 신경망과 안전성 논의의 중심에 서 있는 연구자."
+          "axis": "사람",
+          "summary": "대규모 신경망과 안전성 논의의 중심에 서 있는 연구자.",
+          "description": "딥러닝과 대규모 모델 발전에 관여한 핵심 연구자.",
+          "sections": {
+            "what": "Ilya Sutskever는 대규모 신경망과 생성형 AI 발전에 큰 영향을 준 연구자다.",
+            "why": "그의 행보는 AI 성능 경쟁과 안전성 논의가 분리될 수 없음을 보여준다.",
+            "sigak": "SIGAK.AI는 연구자의 이동과 발언을 기술 내부의 긴장을 읽는 단서로 본다.",
+            "flow": "딥러닝 연구 → 대규모 모델 → 생성형 AI → 안전성 조직",
+            "question": "더 강한 AI를 만드는 일과 더 안전한 AI를 만드는 일은 같은 방향일까?"
+          },
+          "tags": ["연구자", "안전성", "LLM"],
+          "relatedIds": ["agi-timeline", "geoffrey-hinton"]
         },
         {
           "id": "jensen-huang",
           "title": "Jensen Huang",
-          "summary": "AI 시대의 계산 인프라와 GPU 산업을 대표하는 기업가."
+          "axis": "사람",
+          "summary": "AI 시대의 계산 인프라와 GPU 산업을 대표하는 기업가.",
+          "description": "AI 발전의 물리적 기반인 GPU와 컴퓨팅 인프라를 대표하는 인물.",
+          "sections": {
+            "what": "Jensen Huang은 NVIDIA를 통해 AI 시대의 계산 인프라를 상징하는 인물이 됐다.",
+            "why": "AI는 소프트웨어이지만, 그 속도는 칩과 데이터센터라는 물리적 기반에 의존한다.",
+            "sigak": "SIGAK.AI는 AI 시대를 모델만이 아니라 인프라의 관점에서도 봐야 한다고 본다.",
+            "flow": "GPU → 딥러닝 → 데이터센터 → AI 산업 인프라",
+            "question": "AI 시대의 권력은 모델에 있을까, 계산 자원에 있을까?"
+          },
+          "tags": ["NVIDIA", "GPU", "인프라"],
+          "relatedIds": ["ai-speed", "ai-future"]
         },
         {
           "id": "ai-people-map",
           "title": "AI 인물 관계도",
-          "summary": "연구자, 기업가, 투자자, 정책 결정자가 어떻게 연결되는지 보여준다."
+          "axis": "사람",
+          "summary": "연구자, 기업가, 투자자, 정책 결정자가 어떻게 연결되는지 보여준다.",
+          "description": "AI 시대를 움직이는 사람들의 관계와 영향력을 보는 주제.",
+          "sections": {
+            "what": "AI 인물 관계도는 연구, 기업, 자본, 규제의 연결을 한눈에 보기 위한 지도다.",
+            "why": "기술 변화는 논문만이 아니라 사람과 조직의 관계 속에서 움직인다.",
+            "sigak": "SIGAK.AI는 인물 관계를 시대 변화의 숨은 구조로 본다.",
+            "flow": "연구자 → 스타트업 → 빅테크 → 투자자 → 정책",
+            "question": "AI 시대를 실제로 움직이는 사람들은 누구인가?"
+          },
+          "tags": ["관계도", "인물", "조직"],
+          "relatedIds": ["sam-altman", "demis-hassabis", "jensen-huang"]
         },
         {
           "id": "ai-quotes",
           "title": "AI 대가들의 발언",
-          "summary": "중요한 인물들이 AI의 미래를 어떻게 말했는지 기록한다."
+          "axis": "사람",
+          "summary": "중요한 인물들이 AI의 미래를 어떻게 말했는지 기록한다.",
+          "description": "AI를 만든 사람들의 말에서 시대의 방향과 긴장을 읽는 주제.",
+          "sections": {
+            "what": "AI 대가들의 발언은 기술의 가능성과 두려움, 전략을 드러내는 기록이다.",
+            "why": "말은 단순 의견이 아니라 투자, 연구, 정책의 방향에 영향을 준다.",
+            "sigak": "SIGAK.AI는 발언을 미래 예언이 아니라 현재의 욕망과 불안을 읽는 자료로 본다.",
+            "flow": "연구 발언 → 대중 담론 → 정책 논의 → 사회적 기대",
+            "question": "우리는 AI 전문가의 말을 얼마나 믿고, 얼마나 의심해야 할까?"
+          },
+          "tags": ["발언", "담론", "기록"],
+          "relatedIds": ["geoffrey-hinton", "sam-altman"]
         }
       ]
     },
@@ -85,42 +217,130 @@
         {
           "id": "job-map",
           "title": "일자리 변화 지도",
-          "summary": "AI가 직업의 역할과 필요한 능력을 어떻게 재배치하는지 본다."
+          "axis": "지도",
+          "summary": "AI가 직업의 역할과 필요한 능력을 어떻게 재배치하는지 본다.",
+          "description": "AI가 업종별 업무와 능력의 지형을 어떻게 바꾸는지 정리하는 주제.",
+          "sections": {
+            "what": "일자리 변화 지도는 직업이 사라지는지보다 업무 단위가 어떻게 재편되는지를 본다.",
+            "why": "AI 영향은 직업명보다 실제 업무 내용에 더 먼저 나타난다.",
+            "sigak": "SIGAK.AI는 일자리 변화를 대체의 문제가 아니라 역할 재구성의 문제로 본다.",
+            "flow": "업무 자동화 → 역할 분해 → 능력 재조합 → 새로운 직무",
+            "question": "내 직업이 아니라 내 업무 중 무엇이 먼저 바뀔까?"
+          },
+          "tags": ["일자리", "업무", "변화"],
+          "relatedIds": ["coding", "important-capability"]
         },
         {
           "id": "white-collar",
           "title": "화이트칼라",
-          "summary": "문서, 분석, 기획, 코딩 업무가 AI와 함께 어떻게 바뀌는지 정리한다."
+          "axis": "지도",
+          "summary": "문서, 분석, 기획, 코딩 업무가 AI와 함께 어떻게 바뀌는지 정리한다.",
+          "description": "사무직과 지식 노동의 변화 방향을 보는 주제.",
+          "sections": {
+            "what": "AI는 문서 작성, 요약, 분석, 기획 초안 등 화이트칼라 업무 일부를 빠르게 보조한다.",
+            "why": "지식 노동의 많은 부분이 언어와 패턴 처리로 구성돼 있기 때문이다.",
+            "sigak": "SIGAK.AI는 화이트칼라 변화를 직업 위기만이 아니라 판단 능력의 재평가로 본다.",
+            "flow": "반복 문서 → 분석 보조 → 의사결정 지원 → 역할 재정의",
+            "question": "AI가 초안을 만든다면 인간의 전문성은 어디에서 드러날까?"
+          },
+          "tags": ["화이트칼라", "업무", "지식노동"],
+          "relatedIds": ["coding", "judgment-context"]
         },
         {
           "id": "blue-collar",
           "title": "블루칼라",
-          "summary": "로봇, 자동화, 현장 작업의 변화가 어디까지 확장되는지 본다."
+          "axis": "지도",
+          "summary": "로봇, 자동화, 현장 작업의 변화가 어디까지 확장되는지 본다.",
+          "description": "현장 노동과 물리적 자동화의 변화를 보는 주제.",
+          "sections": {
+            "what": "AI는 로봇, 센서, 자동화 시스템과 결합해 물리적 작업에도 영향을 준다.",
+            "why": "현장 노동은 디지털 업무보다 느리게 변하지만 한번 바뀌면 산업 구조 전체에 영향을 준다.",
+            "sigak": "SIGAK.AI는 AI 변화가 화면 안에만 머물지 않는다는 점에 주목한다.",
+            "flow": "센서 → 로봇 제어 → 작업 자동화 → 현장 운영 변화",
+            "question": "AI가 몸을 갖게 될 때 노동의 의미는 어떻게 달라질까?"
+          },
+          "tags": ["로봇", "현장", "자동화"],
+          "relatedIds": ["job-map", "ai-future"]
         },
         {
           "id": "education",
           "title": "교육",
-          "summary": "개인 튜터와 맞춤 학습이 공부의 방식을 어떻게 바꾸는지 살핀다."
+          "axis": "지도",
+          "summary": "개인 튜터와 맞춤 학습이 공부의 방식을 어떻게 바꾸는지 살핀다.",
+          "description": "AI가 학습과 교육의 구조를 어떻게 바꾸는지 보는 주제.",
+          "sections": {
+            "what": "AI는 질문에 답하고, 피드백을 주고, 학습자의 속도에 맞춘 설명을 제공한다.",
+            "why": "개인화된 설명이 저렴하게 제공되면 교육의 기본 단위가 바뀔 수 있다.",
+            "sigak": "SIGAK.AI는 교육 변화의 핵심을 지식 전달보다 학습 설계의 변화로 본다.",
+            "flow": "검색 → 설명형 AI → 개인 튜터 → 맞춤형 학습 루프",
+            "question": "모두에게 튜터가 생기면 학교는 무엇을 가르쳐야 할까?"
+          },
+          "tags": ["교육", "학습", "튜터"],
+          "relatedIds": ["important-capability", "questioning"]
         },
         {
           "id": "coding",
           "title": "코딩",
-          "summary": "개발이 작성 중심에서 설계, 검증, 조율 중심으로 이동하는 흐름."
+          "axis": "지도",
+          "summary": "AI가 코딩을 직접 작성에서 설계와 검증의 영역으로 바꾸고 있다",
+          "description": "AI 코딩 도구가 개발자의 역할을 어떻게 바꾸는지 보는 주제.",
+          "sections": {
+            "what": "AI는 코드를 작성하고, 수정하고, 설명하며, 개발자가 더 큰 구조를 설계하게 돕는다.",
+            "why": "코딩은 명확한 언어와 피드백 루프가 있어 AI가 빠르게 영향을 주는 분야다.",
+            "sigak": "SIGAK.AI는 코딩의 변화가 '코드를 누가 쓰는가'에서 '문제를 누가 정의하고 검증하는가'로 이동한다고 본다.",
+            "flow": "자동완성 → 코드 생성 → 리팩터링 → 에이전트형 개발 → 설계와 검증",
+            "question": "AI가 코드를 쓴다면 개발자의 핵심 능력은 무엇이 될까?"
+          },
+          "tags": ["코딩", "개발자", "에이전트"],
+          "relatedIds": ["ai-speed", "job-map", "important-capability"]
         },
         {
           "id": "creation",
           "title": "창작",
-          "summary": "이미지, 영상, 음악, 글쓰기에서 아이디어와 결과물의 거리가 줄어든다."
+          "axis": "지도",
+          "summary": "이미지, 영상, 음악, 글쓰기에서 아이디어와 결과물의 거리가 줄어든다.",
+          "description": "AI가 창작 과정과 결과물의 의미를 어떻게 바꾸는지 보는 주제.",
+          "sections": {
+            "what": "AI는 글, 이미지, 영상, 음악의 초안을 빠르게 만들 수 있게 한다.",
+            "why": "창작의 진입 장벽이 낮아지면서 표현의 양과 경쟁 방식이 달라진다.",
+            "sigak": "SIGAK.AI는 창작의 변화가 도구 문제가 아니라 선택과 편집 능력의 문제라고 본다.",
+            "flow": "아이디어 → 프롬프트 → 생성 → 편집 → 배포",
+            "question": "누구나 만들 수 있는 시대에 좋은 창작은 무엇으로 구분될까?"
+          },
+          "tags": ["창작", "생성형AI", "표현"],
+          "relatedIds": ["copyright", "judgment-context"]
         },
         {
           "id": "ai-model-map",
           "title": "AI 모델 지도",
-          "summary": "LLM, 이미지 모델, 영상 모델, 에이전트가 어떤 계열로 나뉘는지 본다."
+          "axis": "지도",
+          "summary": "LLM, 이미지 모델, 영상 모델, 에이전트가 어떤 계열로 나뉘는지 본다.",
+          "description": "AI 모델의 종류와 역할을 구분해 보는 주제.",
+          "sections": {
+            "what": "AI 모델 지도는 텍스트, 이미지, 영상, 음성, 에이전트 모델의 차이를 정리한다.",
+            "why": "모델의 종류를 알아야 각 기술이 무엇을 잘하고 못하는지 이해할 수 있다.",
+            "sigak": "SIGAK.AI는 모델 지도를 AI 시대의 기본 문해력으로 본다.",
+            "flow": "분류 모델 → 생성 모델 → 멀티모달 모델 → 에이전트",
+            "question": "우리는 AI라는 한 단어 아래 너무 다른 기술들을 섞어 부르고 있지 않은가?"
+          },
+          "tags": ["모델", "LLM", "지도"],
+          "relatedIds": ["ai-term-map", "ai-future"]
         },
         {
           "id": "ai-term-map",
           "title": "AI 용어 지도",
-          "summary": "어려운 AI 용어를 서로 연결된 개념 지도로 정리한다."
+          "axis": "지도",
+          "summary": "어려운 AI 용어를 서로 연결된 개념 지도로 정리한다.",
+          "description": "AI 용어를 외우는 대신 연결해서 이해하는 주제.",
+          "sections": {
+            "what": "AI 용어 지도는 LLM, 토큰, 파인튜닝, 에이전트 같은 용어의 관계를 정리한다.",
+            "why": "용어를 모르면 기술 변화의 뉴스와 논쟁을 따라가기 어렵다.",
+            "sigak": "SIGAK.AI는 용어를 사전이 아니라 사고의 지도라고 본다.",
+            "flow": "용어 이해 → 개념 연결 → 사건 해석 → 방향 판단",
+            "question": "우리가 모르는 단어는 우리가 보지 못하는 변화가 아닐까?"
+          },
+          "tags": ["용어", "개념", "문해력"],
+          "relatedIds": ["ai-model-map", "questioning"]
         }
       ]
     },
@@ -133,37 +353,114 @@
         {
           "id": "ai-incidents",
           "title": "AI 사건 사고",
-          "summary": "AI가 현실 사회에서 만든 충돌, 사고, 논란을 기록한다."
+          "axis": "기록",
+          "summary": "AI가 현실 사회에서 만든 충돌, 사고, 논란을 기록한다.",
+          "description": "AI 기술이 사회와 부딪히는 순간들을 모으는 주제.",
+          "sections": {
+            "what": "AI 사건 사고는 기술이 실제 사회에 적용될 때 나타나는 실패, 악용, 혼란을 기록한다.",
+            "why": "사건은 기술의 위험이 추상적 개념이 아니라 현실의 문제임을 보여준다.",
+            "sigak": "SIGAK.AI는 사건을 공포가 아니라 학습 자료로 본다.",
+            "flow": "새 기술 등장 → 악용 사례 → 사회적 논쟁 → 규칙과 대응",
+            "question": "우리는 사건이 터진 뒤에야 기술의 의미를 이해하는가?"
+          },
+          "tags": ["사건", "위험", "기록"],
+          "relatedIds": ["deepfake-fraud", "copyright"]
         },
         {
           "id": "deepfake-fraud",
           "title": "딥페이크 사기",
-          "summary": "진짜와 가짜를 구분하는 감각이 흔들리는 대표 사례."
+          "axis": "기록",
+          "summary": "AI가 이미지 조작을 넘어 상황 전체를 조작하기 시작한 사건",
+          "description": "AI가 얼굴, 목소리, 맥락을 조작해 신뢰를 흔드는 대표적 사례.",
+          "sections": {
+            "what": "딥페이크 사기는 AI로 만든 얼굴, 목소리, 영상 등을 이용해 사람을 속이는 사건이다.",
+            "why": "이제 조작은 이미지 한 장이 아니라 상황 전체를 그럴듯하게 구성하는 방식으로 발전하고 있다.",
+            "sigak": "SIGAK.AI는 딥페이크 사기를 '가짜 콘텐츠' 문제가 아니라 신뢰 인프라의 문제로 본다.",
+            "flow": "이미지 합성 → 목소리 복제 → 영상 조작 → 실시간 사기 → 신뢰 검증 기술",
+            "question": "눈과 귀로 확인할 수 없는 시대에 우리는 무엇을 근거로 믿어야 할까?"
+          },
+          "tags": ["딥페이크", "사기", "신뢰"],
+          "relatedIds": ["ai-incidents", "judgment-context", "tool-or-environment"]
         },
         {
           "id": "sora-release",
           "title": "Sora 공개",
-          "summary": "텍스트가 영상 장면으로 이어지는 변화의 상징적 순간."
+          "axis": "기록",
+          "summary": "텍스트가 영상 장면으로 이어지는 변화의 상징적 순간.",
+          "description": "텍스트 기반 영상 생성 기술이 대중의 상상력을 크게 자극한 사건.",
+          "sections": {
+            "what": "Sora 공개는 텍스트 설명만으로 영상 장면을 생성하는 AI의 가능성을 보여줬다.",
+            "why": "영상은 사회적 설득력이 강한 매체라 생성 기술의 영향이 크다.",
+            "sigak": "SIGAK.AI는 Sora를 창작 도구이자 현실감의 경계를 흔드는 사건으로 본다.",
+            "flow": "이미지 생성 → 짧은 영상 → 장면 구성 → 스토리 생성",
+            "question": "영상이 증거가 아니라 생성물이 되는 시대에 우리는 무엇을 믿을까?"
+          },
+          "tags": ["영상", "생성형AI", "Sora"],
+          "relatedIds": ["creation", "deepfake-fraud"]
         },
         {
           "id": "copyright",
           "title": "AI 저작권 논란",
-          "summary": "학습, 창작, 소유의 경계가 어떻게 다시 그어지는지 본다."
+          "axis": "기록",
+          "summary": "학습, 창작, 소유의 경계가 어떻게 다시 그어지는지 본다.",
+          "description": "AI가 만든 결과물과 학습 데이터의 권리를 둘러싼 논쟁.",
+          "sections": {
+            "what": "AI 저작권 논란은 AI 학습 데이터와 생성 결과물의 권리를 둘러싼 문제다.",
+            "why": "창작의 방식이 바뀌면 소유와 보상의 규칙도 다시 논의될 수밖에 없다.",
+            "sigak": "SIGAK.AI는 저작권 논란을 창작 생태계가 새 기술과 협상하는 과정으로 본다.",
+            "flow": "데이터 수집 → 모델 학습 → 생성물 확산 → 법적 논쟁 → 새 규칙",
+            "question": "AI가 배운 것과 인간이 배운 것은 어디서 다르게 취급해야 할까?"
+          },
+          "tags": ["저작권", "창작", "규칙"],
+          "relatedIds": ["creation", "sora-release"]
         },
         {
           "id": "ai-podcast",
           "title": "AI 팟캐스트 정리",
-          "summary": "긴 대화 속에서 나온 핵심 주장과 흐름을 짧게 압축한다."
+          "axis": "기록",
+          "summary": "긴 대화 속에서 나온 핵심 주장과 흐름을 짧게 압축한다.",
+          "description": "AI 관련 긴 대화 콘텐츠를 핵심 논점 중심으로 기록하는 주제.",
+          "sections": {
+            "what": "AI 팟캐스트 정리는 긴 인터뷰와 대담을 핵심 주장으로 압축하는 작업이다.",
+            "why": "AI 담론은 긴 대화 속에서 맥락과 뉘앙스가 드러나는 경우가 많다.",
+            "sigak": "SIGAK.AI는 긴 콘텐츠를 짧은 판단 재료로 바꾸는 것을 아카이브의 역할로 본다.",
+            "flow": "긴 대화 → 핵심 주장 → 연결된 사건 → 해석",
+            "question": "우리는 긴 말을 짧게 줄이면서 무엇을 잃고 무엇을 얻는가?"
+          },
+          "tags": ["팟캐스트", "요약", "기록"],
+          "relatedIds": ["ai-quotes", "song-ai-view"]
         },
         {
           "id": "youtube-archive",
           "title": "유튜브 스토리 아카이브",
-          "summary": "영상 콘텐츠에서 반복되는 AI 시대의 이야기와 사례를 모은다."
+          "axis": "기록",
+          "summary": "영상 콘텐츠에서 반복되는 AI 시대의 이야기와 사례를 모은다.",
+          "description": "AI 관련 영상 콘텐츠의 반복되는 내러티브를 정리하는 주제.",
+          "sections": {
+            "what": "유튜브 스토리 아카이브는 AI 콘텐츠에서 반복되는 사건, 비유, 인물을 모은다.",
+            "why": "대중은 논문보다 영상과 이야기로 AI를 먼저 이해하는 경우가 많다.",
+            "sigak": "SIGAK.AI는 대중 콘텐츠를 시대 감각의 자료로 본다.",
+            "flow": "영상 콘텐츠 → 대중 인식 → 반복 서사 → 시대 감각",
+            "question": "AI를 둘러싼 대중의 상상력은 어디서 만들어지는가?"
+          },
+          "tags": ["유튜브", "스토리", "아카이브"],
+          "relatedIds": ["ai-podcast", "ai-quotes"]
         },
         {
           "id": "meetup-questions",
           "title": "소모임 질문 기록",
-          "summary": "사람들이 실제로 궁금해하는 질문을 축적하는 공간."
+          "axis": "기록",
+          "summary": "사람들이 실제로 궁금해하는 질문을 축적하는 공간.",
+          "description": "소모임에서 나온 질문을 모아 AI 시대의 실제 궁금증을 기록하는 주제.",
+          "sections": {
+            "what": "소모임 질문 기록은 사람들이 AI를 보며 실제로 던진 질문을 모은다.",
+            "why": "진짜 관심사는 검색어보다 질문 속에 더 잘 드러난다.",
+            "sigak": "SIGAK.AI는 질문 기록을 미래 콘텐츠의 씨앗으로 본다.",
+            "flow": "질문 수집 → 주제 분류 → 해석 → 콘텐츠화",
+            "question": "사람들이 반복해서 묻는 질문은 어떤 시대 감각을 보여줄까?"
+          },
+          "tags": ["질문", "소모임", "기록"],
+          "relatedIds": ["questioning", "ai-questions"]
         }
       ]
     },
@@ -176,37 +473,114 @@
         {
           "id": "tool-or-environment",
           "title": "AI는 도구인가 환경인가",
-          "summary": "AI를 앱 하나로 볼지, 새로운 생활 조건으로 볼지 묻는다."
+          "axis": "시각",
+          "summary": "AI를 단순한 도구가 아니라 새로운 생활 조건으로 바라보는 관점",
+          "description": "AI를 개별 앱이나 기능이 아니라 인간이 살아가는 환경의 변화로 보는 시각.",
+          "sections": {
+            "what": "AI를 도구로 보면 필요할 때 쓰는 기능이지만, 환경으로 보면 생활과 판단의 조건 자체가 바뀐다.",
+            "why": "AI가 검색, 문서, 창작, 대화, 업무에 스며들면 더 이상 분리된 도구로만 보기 어렵다.",
+            "sigak": "SIGAK.AI는 AI를 단순히 잘 쓰는 법보다, AI가 전제가 된 세계를 어떻게 이해할지 묻는다.",
+            "flow": "도구 사용 → 업무 보조 → 생활 인프라 → 사고 방식 변화",
+            "question": "AI가 공기처럼 깔린 시대에 인간은 무엇을 의식적으로 선택해야 할까?"
+          },
+          "tags": ["관점", "환경", "질문"],
+          "relatedIds": ["alphago", "deepfake-fraud", "important-capability"]
         },
         {
           "id": "important-capability",
           "title": "AI 시대에 중요한 능력",
-          "summary": "지식 암기보다 질문, 판단, 맥락 구성 능력이 중요해지는 이유."
+          "axis": "시각",
+          "summary": "지식 암기보다 질문, 판단, 맥락 구성 능력이 중요해지는 이유.",
+          "description": "AI 시대에 인간에게 더 중요해지는 능력을 정리하는 주제.",
+          "sections": {
+            "what": "AI 시대에는 답을 찾는 능력보다 질문을 만들고 결과를 판단하는 능력이 중요해진다.",
+            "why": "AI가 많은 답을 만들수록 어떤 답을 믿고 어디에 쓸지 판단해야 하기 때문이다.",
+            "sigak": "SIGAK.AI는 인간의 경쟁력을 정답 생산이 아니라 맥락 구성 능력에서 찾는다.",
+            "flow": "검색 능력 → 질문 능력 → 판단 능력 → 맥락 설계",
+            "question": "AI가 답을 많이 낼수록 인간은 어떤 질문을 더 잘해야 할까?"
+          },
+          "tags": ["능력", "질문", "판단"],
+          "relatedIds": ["coding", "education", "questioning"]
         },
         {
           "id": "human-role",
           "title": "인간의 역할 변화",
-          "summary": "AI가 할 수 있는 일이 늘어날수록 인간에게 남는 역할을 묻는다."
+          "axis": "시각",
+          "summary": "AI가 할 수 있는 일이 늘어날수록 인간에게 남는 역할을 묻는다.",
+          "description": "AI 시대에 인간의 역할이 어떻게 재정의되는지 보는 주제.",
+          "sections": {
+            "what": "AI가 실행과 생성의 많은 부분을 맡으면 인간은 목적, 기준, 책임을 더 많이 다뤄야 한다.",
+            "why": "기술이 강해질수록 무엇을 할지 정하는 문제가 더 중요해진다.",
+            "sigak": "SIGAK.AI는 인간의 역할을 직접 수행자에서 방향 설정자와 책임 주체로 이동한다고 본다.",
+            "flow": "직접 수행 → AI 보조 → AI 실행 → 인간의 판단과 책임",
+            "question": "AI가 더 많이 할수록 인간은 무엇을 포기하지 말아야 할까?"
+          },
+          "tags": ["인간", "역할", "책임"],
+          "relatedIds": ["tool-or-environment", "important-capability"]
         },
         {
           "id": "questioning",
           "title": "질문하는 능력",
-          "summary": "좋은 답을 얻는 시대에는 좋은 질문을 만드는 힘이 더 중요해진다."
+          "axis": "시각",
+          "summary": "좋은 답을 얻는 시대에는 좋은 질문을 만드는 힘이 더 중요해진다.",
+          "description": "AI와 함께 사고하기 위한 질문 능력을 다루는 주제.",
+          "sections": {
+            "what": "질문하는 능력은 문제를 정의하고, 조건을 설정하고, 답의 수준을 끌어올리는 힘이다.",
+            "why": "AI는 질문의 품질에 따라 전혀 다른 결과를 만든다.",
+            "sigak": "SIGAK.AI는 질문을 AI 시대의 새로운 문해력으로 본다.",
+            "flow": "궁금증 → 질문 설계 → 답변 비교 → 판단",
+            "question": "좋은 질문은 타고나는가, 훈련되는가?"
+          },
+          "tags": ["질문", "문해력", "사고"],
+          "relatedIds": ["important-capability", "meetup-questions"]
         },
         {
           "id": "judgment-context",
           "title": "판단과 맥락",
-          "summary": "AI 결과를 받아들이기 전에 무엇을 기준으로 판단해야 하는지 본다."
+          "axis": "시각",
+          "summary": "AI 결과를 받아들이기 전에 무엇을 기준으로 판단해야 하는지 본다.",
+          "description": "AI가 만든 결과를 평가하는 기준과 맥락의 중요성을 다루는 주제.",
+          "sections": {
+            "what": "판단과 맥락은 AI 결과가 맞는지, 쓸 수 있는지, 위험하지 않은지 가르는 기준이다.",
+            "why": "AI는 그럴듯한 답을 만들 수 있지만, 그 답의 책임은 사용하는 사람에게 남는다.",
+            "sigak": "SIGAK.AI는 AI 시대의 핵심 능력을 결과 수용이 아니라 결과 해석에서 찾는다.",
+            "flow": "AI 결과 → 기준 확인 → 맥락 적용 → 책임 있는 사용",
+            "question": "그럴듯한 답과 좋은 답은 어떻게 구분할 수 있을까?"
+          },
+          "tags": ["판단", "맥락", "책임"],
+          "relatedIds": ["deepfake-fraud", "white-collar", "important-capability"]
         },
         {
           "id": "ai-questions",
           "title": "AI 시대의 질문들",
-          "summary": "기술보다 먼저 붙잡아야 할 사회적, 개인적 질문을 모은다."
+          "axis": "시각",
+          "summary": "기술보다 먼저 붙잡아야 할 사회적, 개인적 질문을 모은다.",
+          "description": "AI 시대를 이해하기 위해 반복해서 물어야 할 질문들을 정리하는 주제.",
+          "sections": {
+            "what": "AI 시대의 질문들은 기술 설명보다 앞서 인간, 사회, 일, 교육의 방향을 묻는다.",
+            "why": "질문이 정리되지 않으면 변화는 빠르게 지나가고 해석은 뒤처진다.",
+            "sigak": "SIGAK.AI는 질문을 콘텐츠의 끝이 아니라 출발점으로 본다.",
+            "flow": "사건 → 질문 → 해석 → 다음 질문",
+            "question": "우리는 AI에게 무엇을 묻기 전에 우리 자신에게 무엇을 물어야 할까?"
+          },
+          "tags": ["질문", "시대", "해석"],
+          "relatedIds": ["meetup-questions", "questioning"]
         },
         {
           "id": "song-ai-view",
           "title": "송시헌의 AI 해석",
-          "summary": "sigak.ai만의 관점으로 AI 시대의 의미를 짧고 선명하게 정리한다."
+          "axis": "시각",
+          "summary": "SIGAK.AI만의 관점으로 AI 시대의 의미를 짧고 선명하게 정리한다.",
+          "description": "AI 사건을 단순 뉴스가 아니라 방향성과 질문으로 해석하는 주제.",
+          "sections": {
+            "what": "송시헌의 AI 해석은 AI 사건을 정보, 의미, 질문으로 나눠 보는 관점이다.",
+            "why": "정보만 많아지는 시대에는 무엇이 중요한지 가르는 시각이 필요하다.",
+            "sigak": "SIGAK.AI는 AI 시대의 아카이브가 단순 저장소가 아니라 해석의 장이어야 한다고 본다.",
+            "flow": "사건 수집 → 맥락 연결 → 해석 → 질문 제안",
+            "question": "좋은 아카이브는 정보를 모으는 곳일까, 관점을 만드는 곳일까?"
+          },
+          "tags": ["해석", "SIGAK.AI", "관점"],
+          "relatedIds": ["alphago", "ai-questions", "tool-or-environment"]
         }
       ]
     }
