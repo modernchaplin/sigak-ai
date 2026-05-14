@@ -1,22 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  weight: ["400", "500"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "SIGAK.AI",
-  description: "SIGAK.AI MVP skeleton",
+  description: "AI 시대를 보는 시각",
 };
 
 export default function RootLayout({
@@ -25,16 +13,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const navItems = [
-    { href: "/history", label: "역사" },
-    { href: "/speed", label: "속도체험" },
-    { href: "/future", label: "미래" },
-    { href: "/glossary", label: "용어" },
+    { href: "/#time", label: "시간" },
+    { href: "/#people", label: "사람" },
+    { href: "/#map", label: "지도" },
+    { href: "/#archive", label: "기록" },
+    { href: "/#view", label: "시각" },
   ];
 
   return (
     <html lang="ko">
-      <body className={`${spaceGrotesk.variable} ${ibmPlexMono.variable}`}>
-        <header className="sticky top-0 z-20 border-b border-black/10 bg-white/90 backdrop-blur-md">
+      <body>
+        <header className="sticky top-0 z-20 border-b border-zinc-800 bg-black/95 text-white backdrop-blur-md">
           <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4">
             <Link href="/" className="tracking-[0.2em] text-xl font-semibold">
               SIGAK.AI
@@ -44,7 +33,7 @@ export default function RootLayout({
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-full border border-black/10 px-3 py-1.5 transition hover:border-black/30"
+                  className="rounded-full border border-zinc-700 px-3 py-1.5 text-zinc-300 transition hover:border-yellow-300 hover:text-yellow-200"
                 >
                   {item.label}
                 </Link>

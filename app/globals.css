@@ -6,13 +6,15 @@
   --line: #e5e7eb;
   --badge: #f3f4f6;
   --point: #1d4ed8;
+  --font-sigak-sans: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+  --font-sigak-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 @theme inline {
   --color-background: var(--bg);
   --color-foreground: var(--fg);
-  --font-sans: var(--font-space-grotesk);
-  --font-mono: var(--font-ibm-plex-mono);
+  --font-sans: var(--font-sigak-sans);
+  --font-mono: var(--font-sigak-mono);
 }
 
 body {
@@ -23,7 +25,13 @@ body {
     linear-gradient(to bottom, rgba(17, 24, 39, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
   color: var(--fg);
-  font-family: var(--font-space-grotesk), sans-serif;
+  font-family: var(--font-sigak-sans);
+}
+
+.sigak-mvp {
+  background:
+    linear-gradient(180deg, rgba(12, 12, 10, 0.98) 0%, rgba(0, 0, 0, 1) 44%),
+    radial-gradient(circle at 50% 0%, rgba(250, 204, 21, 0.14), transparent 34%);
 }
 
 .info-card {
@@ -37,7 +45,7 @@ body {
 }
 
 .mono {
-  font-family: var(--font-ibm-plex-mono), monospace;
+  font-family: var(--font-sigak-mono);
 }
 
 .history-shell {
