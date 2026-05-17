@@ -151,7 +151,7 @@ export default function SigakHome({ axes }: SigakHomeProps) {
   }
 
   return (
-    <section className="sigak-mvp -mx-4 -my-8 min-h-[calc(100vh-4rem)] px-4 py-10 text-white md:px-6 md:py-14">
+    <section className="sigak-mvp min-h-[calc(100vh-4rem)] w-full px-4 py-10 text-white md:px-6 md:py-14">
       <div className="mx-auto max-w-6xl">
         <Hero />
 
@@ -359,7 +359,7 @@ function TopicDetailView({
   const sections = getDetailSections(topic);
 
   return (
-    <section className="sigak-mvp -mx-4 -my-8 min-h-[calc(100vh-4rem)] px-4 py-10 text-white md:px-6 md:py-14">
+    <section className="sigak-mvp min-h-[calc(100vh-4rem)] w-full px-4 py-10 text-white md:px-6 md:py-14">
       <article className="mx-auto max-w-5xl">
         <button
           type="button"

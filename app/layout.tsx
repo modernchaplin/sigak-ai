@@ -21,10 +21,10 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="ko">
-      <body>
-        <header className="sticky top-0 z-20 border-b border-zinc-800 bg-black/95 text-white backdrop-blur-md">
-          <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4">
+    <html lang="ko" className="min-h-screen bg-black">
+      <body className="min-h-screen bg-[#050505] text-white">
+        <header className="sticky top-0 z-20 w-full border-b border-white/10 bg-black text-white backdrop-blur-md">
+          <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 md:px-6">
             <Link href="/" className="tracking-[0.2em] text-xl font-semibold">
               SIGAK.AI
             </Link>
@@ -41,7 +41,7 @@ export default function RootLayout({
             </nav>
           </div>
         </header>
-        <main className="mx-auto w-full max-w-6xl px-4 py-8">{children}</main>
+        <main className="min-h-[calc(100vh-4rem)] w-full bg-[#050505]">{children}</main>
       </body>
     </html>
   );
