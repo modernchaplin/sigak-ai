@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #050505;
-  --fg: #f8fafc;
+  --bg: #f7f8f5;
+  --fg: #111111;
+  --surface: #ffffff;
+  --surface-soft: #f1f5f3;
+  --surface-tint: #ecfdf5;
+  --muted: #4b5563;
+  --muted-soft: #6b7280;
   --line: #e5e7eb;
-  --badge: #f3f4f6;
-  --point: #1d4ed8;
+  --line-strong: #d1d5db;
+  --badge: #f3f7f5;
+  --point: #0f766e;
+  --point-bright: #14b8a6;
+  --point-soft: #ccfbf1;
+  --legacy-yellow: #facc15;
+  --shadow-soft: 0 18px 48px rgba(15, 23, 42, 0.08);
   --font-sigak-sans: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
   --font-sigak-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
@@ -27,16 +37,140 @@ body {
 
 body {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
-  background-size: 48px 48px;
+    linear-gradient(to right, rgba(20, 184, 166, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
   font-family: var(--font-sigak-sans);
 }
 
 .sigak-mvp {
+  --sigak-bg: var(--bg);
+  --sigak-surface: var(--surface);
+  --sigak-surface-soft: var(--surface-soft);
+  --sigak-text-primary: var(--fg);
+  --sigak-text-secondary: var(--muted);
+  --sigak-text-tertiary: var(--muted-soft);
+  --sigak-line: var(--line);
+  --sigak-accent: var(--point-bright);
+  --sigak-accent-strong: var(--point);
+  --sigak-accent-soft: var(--point-soft);
+  --sigak-yellow: var(--legacy-yellow);
   background:
-    linear-gradient(180deg, rgba(12, 12, 10, 0.98) 0%, rgba(0, 0, 0, 1) 44%),
-    radial-gradient(circle at 50% 0%, rgba(250, 204, 21, 0.14), transparent 34%);
+    radial-gradient(circle at 12% 0%, rgba(20, 184, 166, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(247, 248, 245, 0.98) 0%, rgba(250, 250, 247, 1) 45%, rgba(247, 248, 245, 1) 100%);
+  color: var(--sigak-text-primary);
+}
+
+.sigak-mvp.text-white {
+  color: var(--sigak-text-primary);
+}
+
+.sigak-mvp .bg-black,
+.sigak-mvp .bg-zinc-950,
+.sigak-mvp [class~="bg-zinc-950/55"],
+.sigak-mvp [class~="bg-zinc-950/72"] {
+  background-color: var(--sigak-surface);
+}
+
+.sigak-mvp [class~="bg-zinc-900/80"],
+.sigak-mvp .bg-zinc-900 {
+  background-color: var(--sigak-surface-soft);
+}
+
+.sigak-mvp [class~="bg-yellow-300/8"],
+.sigak-mvp [class~="bg-yellow-300/10"] {
+  background-color: color-mix(in srgb, var(--sigak-accent-soft) 65%, white);
+}
+
+.sigak-mvp .bg-yellow-300 {
+  background-color: var(--sigak-accent);
+}
+
+.sigak-mvp .text-white,
+.sigak-mvp .text-zinc-200,
+.sigak-mvp .text-zinc-300 {
+  color: var(--sigak-text-primary);
+}
+
+.sigak-mvp .text-zinc-400,
+.sigak-mvp .text-zinc-500 {
+  color: var(--sigak-text-secondary);
+}
+
+.sigak-mvp .text-zinc-700 {
+  color: var(--sigak-text-tertiary);
+}
+
+.sigak-mvp .text-yellow-300,
+.sigak-mvp [class~="text-yellow-300/80"],
+.sigak-mvp .text-yellow-200,
+.sigak-mvp .text-yellow-100 {
+  color: var(--sigak-accent-strong);
+}
+
+.sigak-mvp .border-zinc-700,
+.sigak-mvp .border-zinc-800,
+.sigak-mvp .border-zinc-600 {
+  border-color: var(--sigak-line);
+}
+
+.sigak-mvp .border-yellow-300,
+.sigak-mvp [class~="border-yellow-300/25"],
+.sigak-mvp [class~="border-yellow-300/30"],
+.sigak-mvp [class~="border-yellow-300/35"],
+.sigak-mvp [class~="border-yellow-300/70"] {
+  border-color: color-mix(in srgb, var(--sigak-accent) 42%, var(--sigak-line));
+}
+
+.sigak-mvp .bg-emerald-400\/10 {
+  background-color: rgba(20, 184, 166, 0.1);
+}
+
+.sigak-mvp .text-emerald-200 {
+  color: var(--sigak-accent-strong);
+}
+
+.sigak-mvp .border-emerald-400\/35 {
+  border-color: rgba(20, 184, 166, 0.35);
+}
+
+.sigak-mvp article,
+.sigak-mvp aside,
+.sigak-mvp section > .rounded-2xl,
+.sigak-mvp section > .rounded-3xl,
+.sigak-mvp section > .rounded-\[2rem\] {
+  box-shadow: var(--shadow-soft);
+}
+
+.sigak-mvp button {
+  color: inherit;
+}
+
+.sigak-mvp a {
+  color: var(--sigak-accent-strong);
+}
+
+.sigak-mvp .hover\:-translate-y-0\.5:hover {
+  transform: translateY(-2px);
+}
+
+.sigak-mvp .hover\:bg-zinc-900\/80:hover {
+  background-color: var(--sigak-surface-soft);
+}
+
+.sigak-mvp .hover\:border-yellow-300:hover,
+.sigak-mvp .hover\:border-yellow-300\/60:hover,
+.sigak-mvp .hover\:border-yellow-300\/70:hover {
+  border-color: var(--sigak-accent);
+}
+
+.sigak-mvp .hover\:text-yellow-200:hover,
+.sigak-mvp .group:hover .group-hover\:text-yellow-200 {
+  color: var(--sigak-accent-strong);
+}
+
+.sigak-mvp .group:hover .group-hover\:border-yellow-300\/70 {
+  border-color: var(--sigak-accent);
 }
 
 .info-card {

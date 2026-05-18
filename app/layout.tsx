@@ -21,11 +21,11 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="ko" className="min-h-screen bg-black">
-      <body className="min-h-screen bg-[#050505] text-white">
-        <header className="sticky top-0 z-20 w-full border-b border-white/10 bg-black text-white backdrop-blur-md">
+    <html lang="ko" className="min-h-screen bg-[#f7f8f5]">
+      <body className="min-h-screen bg-[#f7f8f5] text-[#111111]">
+        <header className="sticky top-0 z-20 w-full border-b border-zinc-200 bg-white/90 text-[#111111] shadow-sm backdrop-blur-md">
           <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 md:px-6">
-            <Link href="/" className="tracking-[0.2em] text-xl font-semibold">
+            <Link href="/" className="tracking-[0.2em] text-xl font-semibold text-[#0f172a]">
               SIGAK.AI
             </Link>
             <nav className="flex items-center gap-2 text-sm md:gap-4">
@@ -33,7 +33,7 @@ export default function RootLayout({
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-full border border-zinc-700 px-3 py-1.5 text-zinc-300 transition hover:border-yellow-300 hover:text-yellow-200"
+                  className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-zinc-600 transition hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800"
                 >
                   {item.label}
                 </Link>
@@ -41,7 +41,7 @@ export default function RootLayout({
             </nav>
           </div>
         </header>
-        <main className="min-h-[calc(100vh-4rem)] w-full bg-[#050505]">{children}</main>
+        <main className="min-h-[calc(100vh-4rem)] w-full bg-[#f7f8f5]">{children}</main>
       </body>
     </html>
   );

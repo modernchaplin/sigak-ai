@@ -3,90 +3,1451 @@
     {
       "id": "time",
       "title": "시간",
-      "description": "AI는 어떻게 여기까지 왔고, 어디로 향하는가",
+      "description": "AI가 어떻게 쌓이고 가속되어 왔는가",
       "role": "AI의 역사, 타임라인, 과거-현재-미래 흐름을 보여주는 축",
       "topics": [
         {
           "id": "ai-history",
-          "title": "AI 역사",
+          "title": "AI 연대기",
           "axis": "시간",
-          "summary": "튜링 테스트부터 생성형 AI까지 핵심 사건을 시간순으로 읽는다.",
-          "description": "AI가 어떤 질문과 사건을 거치며 지금의 형태로 발전했는지 보는 입구.",
+          "summary": "AI는 갑자기 나타난 기술이 아니라, 수십 년의 질문과 실패와 돌파가 압축되어 눈앞에 온 흐름이다.",
+          "description": "AI 역사를 연도 암기가 아니라, 지능을 만들려는 시도들이 어떻게 누적되고 가속되어 지금의 AI Agent와 AGI 논의까지 이어졌는지 읽는 시간 지도.",
           "sections": {
-            "what": "AI 역사는 기계가 생각할 수 있는가라는 질문에서 시작해 학습, 추론, 생성, 에이전트로 확장된 흐름이다.",
-            "why": "AI를 현재의 제품만으로 보면 변화의 속도와 방향을 놓치기 쉽다.",
-            "sigak": "SIGAK.AI는 AI 역사를 과거 사건의 목록이 아니라 미래를 읽기 위한 시간 감각으로 본다.",
-            "flow": "튜링 테스트 → 다트머스 회의 → 딥러닝 → AlphaGo → ChatGPT → 에이전트",
+            "what": "AI 연대기는 AI의 핵심 사건을 여러 era로 나누고, 각 milestone이 다음 흐름으로 어떻게 이어졌는지 보여주는 시간 축 대표 콘텐츠다.",
+            "why": "AI를 현재의 챗봇이나 제품만으로 보면 변화가 갑자기 나타난 것처럼 보인다. 하지만 AI는 오래 쌓인 질문, 실패, 돌파, 대중화가 겹치며 지금의 속도를 만들었다.",
+            "sigak": "SIGAK.AI는 AI 역사를 사건 목록이 아니라 속도의 축적으로 본다. 중요한 것은 누가 먼저 만들었는가보다, 어떤 능력이 쌓이고 어떤 질문이 다음 시대로 넘어갔는가다.",
+            "flow": "이론의 씨앗 → AI의 탄생 → 겨울과 침체 → 통계적 학습 → 딥러닝 돌파 → 생성 AI → 에이전트 → AGI 논의",
             "question": "AI의 역사는 기술의 발전사일까, 인간이 지능을 다시 정의해 온 과정일까?"
           },
           "tags": [
-            "역사",
-            "타임라인",
-            "흐름"
+            "연대기",
+            "AI 역사",
+            "시간 지도"
           ],
           "relatedIds": [
             "agi-timeline",
             "alphago",
-            "chatgpt"
-          ]
+            "chatgpt",
+            "ai-agent",
+            "ai-speed-experience"
+          ],
+          "chronicle": {
+            "eras": [
+              {
+                "id": "seeds",
+                "title": "이론의 씨앗",
+                "period": "1943-1955",
+                "summary": "AI는 제품보다 먼저 질문으로 시작됐다.",
+                "sigakView": "이 시기의 핵심은 기술이 아니라 질문이다. 인간의 지능을 계산으로 설명할 수 있다는 생각이 모든 AI 흐름의 씨앗이 됐다.",
+                "milestoneIds": [
+                  "mcculloch-pitts-neuron",
+                  "turing-test"
+                ]
+              },
+              {
+                "id": "birth",
+                "title": "AI의 탄생",
+                "period": "1956-1969",
+                "summary": "AI라는 이름이 생기고, 낙관도 함께 커졌다.",
+                "sigakView": "AI의 탄생은 연구 분야의 탄생이자 기대의 탄생이었다. 이 기대는 이후의 돌파와 겨울을 동시에 만들었다.",
+                "milestoneIds": [
+                  "dartmouth-conference",
+                  "perceptron",
+                  "eliza",
+                  "perceptrons-critique"
+                ]
+              },
+              {
+                "id": "first-winter",
+                "title": "첫 번째 겨울",
+                "period": "1970-1979",
+                "summary": "약속은 컸고, 현실은 느렸다.",
+                "sigakView": "첫 번째 겨울은 실패의 이름이 아니다. AI가 스스로의 기대치를 다시 조정한 시간이었다.",
+                "milestoneIds": [
+                  "lighthill-report"
+                ]
+              },
+              {
+                "id": "expert-winter",
+                "title": "전문가 시스템과 두 번째 겨울",
+                "period": "1980-1993",
+                "summary": "규칙으로 지능을 만들려 했고, 규칙의 한계도 배웠다.",
+                "sigakView": "전문가 시스템은 지식을 넣으면 지능이 생긴다는 믿음을 실험했다. 하지만 지능은 규칙 목록보다 훨씬 미끄러운 것이었다.",
+                "milestoneIds": [
+                  "backpropagation-rediscovered"
+                ]
+              },
+              {
+                "id": "statistical-rise",
+                "title": "통계적 학습의 부상",
+                "period": "1994-2011",
+                "summary": "AI는 규칙에서 데이터로 방향을 틀었다.",
+                "sigakView": "AI는 인간처럼 생각하려는 길에서, 데이터에서 패턴을 배우는 길로 방향을 바꿨다. 이 전환이 딥러닝의 토양이 됐다.",
+                "milestoneIds": [
+                  "deep-blue"
+                ]
+              },
+              {
+                "id": "deep-learning-breakthrough",
+                "title": "딥러닝 돌파",
+                "period": "2012-2017",
+                "summary": "데이터, GPU, 신경망이 맞물리며 성능이 폭발했다.",
+                "sigakView": "딥러닝 돌파의 의미는 단순 성능 향상이 아니다. AI가 사람이 정한 규칙보다 스스로 배운 표현에 의존하기 시작했다는 점이다.",
+                "milestoneIds": [
+                  "alexnet",
+                  "gans",
+                  "alphago",
+                  "transformer"
+                ]
+              },
+              {
+                "id": "transformer-generative",
+                "title": "트랜스포머와 생성 AI",
+                "period": "2018-2021",
+                "summary": "언어가 AI의 범용 인터페이스가 되기 시작했다.",
+                "sigakView": "트랜스포머 이후 AI는 특정 기능 묶음이 아니라, 언어를 통해 여러 작업을 이어 붙이는 범용 인터페이스에 가까워졌다.",
+                "milestoneIds": [
+                  "bert-gpt1",
+                  "gpt-3"
+                ]
+              },
+              {
+                "id": "public-shock",
+                "title": "대중화의 충격",
+                "period": "2022-2024",
+                "summary": "AI는 연구실에서 일상으로 들어왔다.",
+                "sigakView": "대중화의 충격은 성능만의 문제가 아니었다. AI가 모두의 손에 들어오면서 일, 공부, 창작의 기본 환경이 바뀌기 시작했다.",
+                "milestoneIds": [
+                  "chatgpt",
+                  "gpt-4",
+                  "sora-multimodal"
+                ]
+              },
+              {
+                "id": "agentic-era",
+                "title": "에이전트 시대",
+                "period": "2025-",
+                "summary": "AI는 답변에서 실행으로 이동하고 있다.",
+                "sigakView": "에이전트 시대의 핵심은 자동화가 아니라 역할 이동이다. 인간은 실행자에서 방향 설정자와 검증자로 밀려난다.",
+                "milestoneIds": [
+                  "ai-agents"
+                ]
+              },
+              {
+                "id": "agi-discussion",
+                "title": "AGI 논의",
+                "period": "미래",
+                "summary": "AGI는 날짜보다 방향성의 문제다.",
+                "sigakView": "AGI 논의는 미래 예언이 아니다. 이미 넓어지고 있는 AI의 능력을 어떤 기준으로 볼 것인가의 문제다.",
+                "milestoneIds": [
+                  "agi-discussion"
+                ]
+              }
+            ],
+            "milestones": [
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "McCulloch-Pitts Neuron source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "mcculloch-pitts-neuron",
+                "year": "1943",
+                "title": "McCulloch-Pitts Neuron",
+                "era": "seeds",
+                "category": "이론",
+                "summary": "지능을 계산으로 설명할 수 있다는 첫 씨앗.",
+                "whatHappened": "Warren McCulloch와 Walter Pitts는 단순한 이진 뉴런으로 논리 연산을 표현할 수 있다는 모델을 제시했다.",
+                "whyImportant": "현대 신경망의 먼 출발점이다. 지능을 생물학적 현상이 아니라 계산 가능한 구조로 볼 수 있다는 상상력을 열었다.",
+                "sigakView": "AI의 첫 장면은 제품 출시가 아니라 “지능도 회로처럼 설명할 수 있는가”라는 질문이었다.",
+                "nextFlow": "인공 뉴런 → 튜링 테스트 → 초기 AI 연구 → 딥러닝",
+                "remainingQuestion": "지능은 계산으로 충분히 설명될 수 있을까?",
+                "people": [
+                  "Warren McCulloch",
+                  "Walter Pitts"
+                ],
+                "organizations": [
+                  "University of Chicago"
+                ],
+                "tags": [
+                  "신경망",
+                  "이론",
+                  "계산"
+                ],
+                "imageAlt": "McCulloch-Pitts Neuron placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alan_Turing_(1951).jpg",
+                "imageCredit": "Alan Turing (1951).jpg, Elliott & Fry, via Wikimedia Commons",
+                "imageLicense": "Public Domain Mark 1.0",
+                "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Alan_Turing_(1951).jpg",
+                "imageStatus": "verified",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Turing Test source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "turing-test",
+                "year": "1950",
+                "title": "Turing Test",
+                "era": "seeds",
+                "category": "철학",
+                "summary": "기계가 생각하는가보다, 우리가 지능을 어떻게 판단하는가를 물었다.",
+                "whatHappened": "Turing은 기계 지능을 직접 정의하기보다, 인간과 구별하기 어려운 대화를 기준으로 평가하는 사고 실험을 제안했다.",
+                "whyImportant": "AI의 핵심 질문을 기술 문제가 아니라 인간이 지능을 어떻게 판단하는가의 문제로 만들었다.",
+                "sigakView": "튜링 테스트는 기계 지능의 답이 아니라 인간이 지능을 판단하는 방식을 드러낸 거울이다.",
+                "nextFlow": "튜링 테스트 → 다트머스 회의 → 대화형 AI → ChatGPT",
+                "remainingQuestion": "기계가 사람처럼 말하면, 우리는 그것을 지능이라고 불러야 할까?",
+                "people": [
+                  "Alan Turing"
+                ],
+                "organizations": [
+                  "University of Manchester"
+                ],
+                "tags": [
+                  "튜링 테스트",
+                  "철학",
+                  "지능"
+                ],
+                "imageAlt": "Alan Turing portrait photographed in 1951",
+                "imageType": "person",
+                "imageAuthor": "Elliott & Fry",
+                "imageSourceTitle": "Alan Turing (1951).jpg",
+                "imageModified": false,
+                "cropNote": "원본 파일은 수정하지 않고 카드에서 object-fit cover로 표시합니다."
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Dartmouth Conference source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "dartmouth-conference",
+                "year": "1956",
+                "title": "Dartmouth Conference",
+                "era": "birth",
+                "category": "연구",
+                "summary": "AI라는 이름이 붙고, 기대도 함께 태어났다.",
+                "whatHappened": "연구자들이 모여 기계가 학습과 지능의 여러 측면을 시뮬레이션할 수 있다는 가능성을 논의했다.",
+                "whyImportant": "AI가 흩어진 질문에서 하나의 연구 분야로 조직되기 시작했다.",
+                "sigakView": "다트머스는 AI의 출생 신고서였다. 동시에 과한 약속이 긴 겨울을 부르는 첫 신호이기도 했다.",
+                "nextFlow": "AI라는 이름 → 초기 프로그램 → 퍼셉트론 → AI 겨울",
+                "remainingQuestion": "이름을 붙이는 순간, 기대도 함께 만들어지는가?",
+                "people": [
+                  "John McCarthy",
+                  "Marvin Minsky",
+                  "Claude Shannon"
+                ],
+                "organizations": [
+                  "Dartmouth College",
+                  "MIT",
+                  "IBM"
+                ],
+                "tags": [
+                  "AI 탄생",
+                  "연구",
+                  "낙관"
+                ],
+                "imageAlt": "Dartmouth Conference placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Perceptron source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "perceptron",
+                "year": "1958",
+                "title": "Perceptron",
+                "era": "birth",
+                "category": "모델",
+                "summary": "학습하는 기계에 대한 첫 대중적 상상.",
+                "whatHappened": "Frank Rosenblatt는 입력에서 패턴을 학습하는 퍼셉트론을 제안하고 구현했다.",
+                "whyImportant": "AI가 사람이 규칙을 모두 넣는 것이 아니라 데이터에서 학습할 수 있다는 방향을 보여줬다.",
+                "sigakView": "퍼셉트론은 작은 모델이었지만, 사회는 거기서 미래의 기계를 보았다. AI는 늘 성능보다 상상이 먼저 달린다.",
+                "nextFlow": "퍼셉트론 → 한계 비판 → 신경망 침체 → 역전파 재발견",
+                "remainingQuestion": "기술의 가능성과 사회의 기대는 어떻게 균형을 잡아야 할까?",
+                "people": [
+                  "Frank Rosenblatt"
+                ],
+                "organizations": [
+                  "Cornell Aeronautical Laboratory"
+                ],
+                "tags": [
+                  "퍼셉트론",
+                  "신경망",
+                  "학습"
+                ],
+                "imageAlt": "Perceptron placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "ELIZA source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "eliza",
+                "year": "1966",
+                "title": "ELIZA",
+                "era": "birth",
+                "category": "대화",
+                "summary": "사람이 기계에 이해를 투사할 수 있음을 보여준 초기 챗봇.",
+                "whatHappened": "Joseph Weizenbaum은 사용자의 문장을 되묻는 방식으로 심리 상담사처럼 보이는 프로그램 ELIZA를 만들었다.",
+                "whyImportant": "사람이 기계에 감정과 이해를 투사하는 현상을 일찍 보여줬다.",
+                "sigakView": "ELIZA는 AI가 똑똑하지 않아도 인간이 의미를 부여하면 강력해질 수 있음을 보여줬다.",
+                "nextFlow": "ELIZA → 대화형 인터페이스 → ChatGPT → AI 관계와 신뢰 문제",
+                "remainingQuestion": "AI가 우리를 이해하는 것과 우리가 이해받는다고 느끼는 것은 같은 일일까?",
+                "people": [
+                  "Joseph Weizenbaum"
+                ],
+                "organizations": [
+                  "MIT"
+                ],
+                "tags": [
+                  "챗봇",
+                  "대화",
+                  "ELIZA 효과"
+                ],
+                "imageAlt": "ELIZA placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Perceptrons Critique source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "perceptrons-critique",
+                "year": "1969",
+                "title": "Perceptrons Critique",
+                "era": "birth",
+                "category": "비판",
+                "summary": "신경망 낙관을 꺾고 긴 침체의 문을 열었다.",
+                "whatHappened": "Minsky와 Papert는 단층 퍼셉트론이 해결하지 못하는 문제들을 수학적으로 분석했다.",
+                "whyImportant": "기술적 비판이 연구 자금과 분위기 전체에 영향을 줄 수 있음을 보여줬다.",
+                "sigakView": "정확한 비판도 시대의 공기 속에서는 가능성 전체를 닫는 문장으로 번역될 수 있다.",
+                "nextFlow": "퍼셉트론 비판 → 신경망 침체 → 역전파 → 딥러닝 부활",
+                "remainingQuestion": "기술의 한계를 말하는 것과 가능성을 닫아버리는 것은 어떻게 다를까?",
+                "people": [
+                  "Marvin Minsky",
+                  "Seymour Papert"
+                ],
+                "organizations": [
+                  "MIT"
+                ],
+                "tags": [
+                  "비판",
+                  "AI 겨울",
+                  "신경망"
+                ],
+                "imageAlt": "Perceptrons Critique placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Lighthill Report source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "lighthill-report",
+                "year": "1973",
+                "title": "Lighthill Report",
+                "era": "first-winter",
+                "category": "정책",
+                "summary": "과한 기대가 지원 축소로 돌아온 첫 번째 겨울의 신호.",
+                "whatHappened": "영국의 James Lighthill은 AI 연구가 기대한 만큼의 성과를 내지 못했다고 평가했다.",
+                "whyImportant": "AI의 과장된 기대가 정책과 자금 지원의 급격한 후퇴로 이어질 수 있음을 보여줬다.",
+                "sigakView": "AI 겨울은 기술 실패만이 아니라 기대 관리 실패였다. AI는 언제나 성능과 약속 사이에서 흔들린다.",
+                "nextFlow": "초기 낙관 → 자금 축소 → 전문가 시스템 → 두 번째 겨울",
+                "remainingQuestion": "AI의 발전을 평가할 때 우리는 무엇을 기준으로 삼아야 할까?",
+                "people": [
+                  "James Lighthill"
+                ],
+                "organizations": [
+                  "UK Science Research Council"
+                ],
+                "tags": [
+                  "AI 겨울",
+                  "정책",
+                  "기대"
+                ],
+                "imageAlt": "Lighthill Report placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Backpropagation Rediscovered source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "backpropagation-rediscovered",
+                "year": "1986",
+                "title": "Backpropagation Rediscovered",
+                "era": "expert-winter",
+                "category": "알고리즘",
+                "summary": "잊힌 신경망 학습법이 딥러닝의 기반으로 돌아왔다.",
+                "whatHappened": "Rumelhart, Hinton, Williams는 오류를 뒤로 전파해 가중치를 조정하는 학습 방법을 널리 알렸다.",
+                "whyImportant": "신경망이 다시 진지한 연구 대상이 되는 계기가 됐다.",
+                "sigakView": "AI 역사에서 중요한 아이디어는 사라지지 않는다. 시대가 준비될 때 다시 돌아온다.",
+                "nextFlow": "역전파 → CNN/LSTM → AlexNet → 딥러닝 폭발",
+                "remainingQuestion": "왜 어떤 아이디어는 시대가 준비될 때까지 기다려야 할까?",
+                "people": [
+                  "David Rumelhart",
+                  "Geoffrey Hinton",
+                  "Ronald Williams"
+                ],
+                "organizations": [
+                  "UC San Diego",
+                  "Carnegie Mellon University"
+                ],
+                "tags": [
+                  "역전파",
+                  "신경망",
+                  "딥러닝"
+                ],
+                "imageAlt": "Backpropagation Rediscovered placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Deep Blue source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "deep-blue",
+                "year": "1997",
+                "title": "Deep Blue",
+                "era": "statistical-rise",
+                "category": "상징 사건",
+                "summary": "기계가 인간 최고수를 이긴 첫 대중적 장면.",
+                "whatHappened": "전용 하드웨어와 탐색 알고리즘을 결합한 Deep Blue가 인간 최고수를 상대로 승리했다.",
+                "whyImportant": "AI가 특정 영역에서 인간 최고 수준을 넘어설 수 있다는 상징을 만들었다.",
+                "sigakView": "Deep Blue는 범용 지능이 아니었다. 그러나 대중은 처음으로 “기계가 인간 최고수를 이긴 장면”을 보았다.",
+                "nextFlow": "Deep Blue → AlphaGo → 인간 직관 바깥의 탐색 → AGI 논의",
+                "remainingQuestion": "좁은 영역의 승리는 지능의 승리일까, 계산의 승리일까?",
+                "people": [
+                  "Garry Kasparov"
+                ],
+                "organizations": [
+                  "IBM"
+                ],
+                "tags": [
+                  "체스",
+                  "상징",
+                  "특화 AI"
+                ],
+                "imageAlt": "Deep Blue placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Geoffrey_E._Hinton,_2024_Nobel_Prize_Laureate_in_Physics_(3x4_cropped).jpg",
+                "imageCredit": "Geoffrey E. Hinton, 2024 Nobel Prize Laureate in Physics (3x4 cropped).jpg, Arthur Petron, via Wikimedia Commons",
+                "imageLicense": "CC BY-SA 4.0",
+                "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Geoffrey_E._Hinton,_2024_Nobel_Prize_Laureate_in_Physics_(3x4_cropped).jpg",
+                "imageStatus": "verified",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "AlexNet source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "alexnet",
+                "year": "2012",
+                "title": "AlexNet",
+                "era": "deep-learning-breakthrough",
+                "category": "모델",
+                "summary": "딥러닝이 AI의 중심으로 돌아온 결정적 돌파.",
+                "whatHappened": "AlexNet은 대규모 이미지 분류 대회에서 기존 방법보다 큰 성능 차이를 보였다.",
+                "whyImportant": "데이터, GPU, 딥러닝 알고리즘이 결합하면 성능이 급격히 오를 수 있음을 입증했다.",
+                "sigakView": "AlexNet은 AI가 다시 된다는 감각을 만든 사건이다. 이후 AI는 규칙보다 규모와 학습의 시대로 들어갔다.",
+                "nextFlow": "AlexNet → 딥러닝 투자 → AlphaGo → Transformer",
+                "remainingQuestion": "성능의 도약은 언제 단순 개선이 아니라 패러다임 전환이 되는가?",
+                "people": [
+                  "Alex Krizhevsky",
+                  "Ilya Sutskever",
+                  "Geoffrey Hinton"
+                ],
+                "organizations": [
+                  "University of Toronto"
+                ],
+                "tags": [
+                  "딥러닝",
+                  "컴퓨터 비전",
+                  "GPU"
+                ],
+                "imageAlt": "Geoffrey Hinton portrait at the 2024 Nobel Prize week",
+                "imageType": "person",
+                "imageAuthor": "Arthur Petron",
+                "imageSourceTitle": "Geoffrey E. Hinton, 2024 Nobel Prize Laureate in Physics (3x4 cropped).jpg",
+                "imageModified": true,
+                "cropNote": "Wikimedia Commons의 3x4 cropped 파일을 사용하며 카드에서는 object-fit cover로 표시합니다."
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "GANs source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "gans",
+                "year": "2014",
+                "title": "GANs",
+                "era": "deep-learning-breakthrough",
+                "category": "생성",
+                "summary": "AI가 인식을 넘어 생성을 향해 움직이기 시작했다.",
+                "whatHappened": "GAN은 생성자와 판별자가 경쟁하면서 더 그럴듯한 데이터를 만들어내는 구조를 제안했다.",
+                "whyImportant": "AI가 분류와 인식을 넘어 새로운 이미지를 생성하는 방향으로 확장되는 신호였다.",
+                "sigakView": "GAN은 AI가 세계를 인식하는 도구에서 세계를 만들어내는 도구로 이동하는 초기 장면이었다.",
+                "nextFlow": "GAN → 생성 모델 → 확산 모델 → Sora와 영상 생성",
+                "remainingQuestion": "AI가 만든 결과물이 충분히 그럴듯하다면, 우리는 진짜와 가짜를 어떻게 구분할까?",
+                "people": [
+                  "Ian Goodfellow"
+                ],
+                "organizations": [
+                  "University of Montreal"
+                ],
+                "tags": [
+                  "생성 AI",
+                  "GAN",
+                  "이미지"
+                ],
+                "imageAlt": "GANs placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "AlphaGo source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [
+                  "demis-hassabis",
+                  "agi-timeline",
+                  "ai-speed-experience"
+                ],
+                "id": "alphago",
+                "year": "2016",
+                "title": "AlphaGo",
+                "era": "deep-learning-breakthrough",
+                "category": "상징 사건",
+                "summary": "인간 직관 바깥을 탐색한 상징적 사건.",
+                "whatHappened": "Google DeepMind의 AlphaGo가 이세돌 9단과의 대국에서 승리했다.",
+                "whyImportant": "AI가 단순 계산을 넘어 인간 전문가도 예상하지 못한 선택을 할 수 있음을 보여줬다.",
+                "sigakView": "AlphaGo의 진짜 충격은 승리가 아니라 인간의 직관 바깥에서 가능성을 탐색했다는 점이다.",
+                "nextFlow": "AlphaGo → AlphaZero → 강화학습 → 과학 발견 → AGI 관측소",
+                "remainingQuestion": "인간이 이해하지 못하는 답을 AI가 낸다면 우리는 그것을 어떻게 받아들여야 할까?",
+                "people": [
+                  "Demis Hassabis",
+                  "Lee Sedol"
+                ],
+                "organizations": [
+                  "Google DeepMind"
+                ],
+                "tags": [
+                  "AlphaGo",
+                  "강화학습",
+                  "직관"
+                ],
+                "imageAlt": "AlphaGo placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Transformer source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "transformer",
+                "year": "2017",
+                "title": "Transformer",
+                "era": "deep-learning-breakthrough",
+                "category": "모델",
+                "summary": "현대 생성 AI의 언어 기반을 만든 아키텍처.",
+                "whatHappened": "Transformer는 순차 처리 대신 attention으로 문맥 관계를 효율적으로 학습하는 구조를 제안했다.",
+                "whyImportant": "대규모 언어모델과 생성 AI의 기술적 기반이 됐다.",
+                "sigakView": "Transformer는 언어를 AI의 작업 공간으로 만들었다. 언어는 곧 인간과 AI가 만나는 운영체제가 됐다.",
+                "nextFlow": "Transformer → BERT/GPT → GPT-3 → ChatGPT",
+                "remainingQuestion": "언어를 잘 다루는 능력은 얼마나 넓은 지능으로 이어질 수 있을까?",
+                "people": [
+                  "Ashish Vaswani",
+                  "Noam Shazeer"
+                ],
+                "organizations": [
+                  "Google"
+                ],
+                "tags": [
+                  "Transformer",
+                  "Attention",
+                  "LLM"
+                ],
+                "imageAlt": "Transformer placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "BERT / GPT-1 source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "bert-gpt1",
+                "year": "2018",
+                "title": "BERT / GPT-1",
+                "era": "transformer-generative",
+                "category": "언어모델",
+                "summary": "언어 모델이 이해와 생성 양쪽으로 확장됐다.",
+                "whatHappened": "BERT는 언어 이해 성능을 끌어올렸고, GPT-1은 생성형 사전학습의 방향을 보여줬다.",
+                "whyImportant": "언어 모델이 특정 기능이 아니라 다양한 작업에 전이될 수 있음을 보여줬다.",
+                "sigakView": "BERT와 GPT-1은 AI가 작업별 프로그램에서 언어 기반 범용 인터페이스로 이동하는 신호였다.",
+                "nextFlow": "BERT/GPT-1 → GPT-2 → GPT-3 → ChatGPT",
+                "remainingQuestion": "하나의 모델이 여러 언어 작업을 처리하면, 그것은 도구일까 플랫폼일까?",
+                "people": [
+                  "Jacob Devlin",
+                  "Alec Radford"
+                ],
+                "organizations": [
+                  "Google",
+                  "OpenAI"
+                ],
+                "tags": [
+                  "BERT",
+                  "GPT",
+                  "언어모델"
+                ],
+                "imageAlt": "BERT / GPT-1 placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "GPT-3 source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "gpt-3",
+                "year": "2020",
+                "title": "GPT-3",
+                "era": "transformer-generative",
+                "category": "언어모델",
+                "summary": "프롬프트만으로 다양한 작업을 수행하는 규모의 충격.",
+                "whatHappened": "GPT-3는 대규모 파라미터와 데이터로 훈련되어 번역, 글쓰기, 코딩, 질의응답 등 다양한 작업을 수행했다.",
+                "whyImportant": "AI 능력 확장의 핵심 변수로 규모와 프롬프트가 주목받게 됐다.",
+                "sigakView": "GPT-3는 자연어가 명령어가 되는 세계의 전조였다. 사람은 코드를 몰라도 AI에게 일을 시킬 수 있게 됐다.",
+                "nextFlow": "GPT-3 → InstructGPT → ChatGPT → GPT-4",
+                "remainingQuestion": "규모를 키우면 지능이 생기는가, 아니면 지능처럼 보이는가?",
+                "people": [
+                  "OpenAI researchers"
+                ],
+                "organizations": [
+                  "OpenAI"
+                ],
+                "tags": [
+                  "GPT-3",
+                  "스케일링",
+                  "프롬프트"
+                ],
+                "imageAlt": "GPT-3 placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "ChatGPT source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [
+                  "ai-as-environment",
+                  "question-ability"
+                ],
+                "id": "chatgpt",
+                "year": "2022",
+                "title": "ChatGPT",
+                "era": "public-shock",
+                "category": "제품",
+                "summary": "AI가 모두의 손에 들어온 대중화의 순간.",
+                "whatHappened": "OpenAI가 ChatGPT를 공개하면서 누구나 자연어로 AI와 대화하고 작업을 맡길 수 있게 됐다.",
+                "whyImportant": "AI가 연구실과 개발자 도구를 넘어 일반인의 업무, 학습, 창작 환경으로 들어왔다.",
+                "sigakView": "ChatGPT의 충격은 모델보다 접근성에 있었다. AI가 모두의 손에 들어오자 시대의 체감 속도가 바뀌었다.",
+                "nextFlow": "ChatGPT → GPT-4 → 멀티모달 AI → AI Agent",
+                "remainingQuestion": "AI와 대화할 수 있게 된 순간, 인간의 질문 능력은 얼마나 중요해지는가?",
+                "people": [
+                  "Sam Altman"
+                ],
+                "organizations": [
+                  "OpenAI"
+                ],
+                "tags": [
+                  "ChatGPT",
+                  "대중화",
+                  "인터페이스"
+                ],
+                "imageAlt": "ChatGPT placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "GPT-4 source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [],
+                "id": "gpt-4",
+                "year": "2023",
+                "title": "GPT-4",
+                "era": "public-shock",
+                "category": "모델",
+                "summary": "AI가 일과 개발의 구조로 들어오기 시작했다.",
+                "whatHappened": "GPT-4는 더 강한 성능과 복잡한 작업 처리 능력으로 대중과 기업의 AI 활용 기대를 키웠다.",
+                "whyImportant": "AI가 단순한 챗봇을 넘어 업무와 개발, 분석의 파트너가 될 수 있다는 인식을 만들었다.",
+                "sigakView": "GPT-4 이후 AI는 장난감이 아니라 일의 구조를 바꾸는 동료로 받아들여지기 시작했다.",
+                "nextFlow": "GPT-4 → 코딩 도구 → 멀티모달 → 에이전트",
+                "remainingQuestion": "AI가 더 똑똑해질수록 인간의 판단은 어디에 놓여야 할까?",
+                "people": [
+                  "OpenAI researchers"
+                ],
+                "organizations": [
+                  "OpenAI"
+                ],
+                "tags": [
+                  "GPT-4",
+                  "추론",
+                  "코딩"
+                ],
+                "imageAlt": "GPT-4 placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "Sora / Multimodal AI source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [
+                  "sora-release",
+                  "deepfake-fraud",
+                  "copyright"
+                ],
+                "id": "sora-multimodal",
+                "year": "2024",
+                "title": "Sora / Multimodal AI",
+                "era": "public-shock",
+                "category": "멀티모달",
+                "summary": "AI가 텍스트를 넘어 이미지, 음성, 영상으로 확장됐다.",
+                "whatHappened": "영상 생성과 멀티모달 모델이 빠르게 발전하며 AI가 여러 감각 양식을 함께 다루는 방향으로 이동했다.",
+                "whyImportant": "AI가 글쓰기 도구를 넘어 현실감, 창작, 미디어 신뢰의 문제와 직접 연결됐다.",
+                "sigakView": "멀티모달 AI는 AI가 텍스트를 넘어 인간이 세계를 경험하는 방식 자체로 들어오는 신호다.",
+                "nextFlow": "멀티모달 AI → 영상 생성 → 현실감 조작 → 기록/저작권/신뢰 문제",
+                "remainingQuestion": "AI가 현실처럼 보이는 것을 만들 때, 우리는 무엇을 믿어야 할까?",
+                "people": [
+                  "OpenAI researchers"
+                ],
+                "organizations": [
+                  "OpenAI"
+                ],
+                "tags": [
+                  "Sora",
+                  "멀티모달",
+                  "영상 생성"
+                ],
+                "imageAlt": "Sora / Multimodal AI placeholder image",
+                "imageType": "event",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "AI Agents source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [
+                  "coding",
+                  "human-role-change",
+                  "agi-timeline"
+                ],
+                "id": "ai-agents",
+                "year": "2025-",
+                "title": "AI Agents",
+                "era": "agentic-era",
+                "category": "에이전트",
+                "summary": "AI가 답변에서 실행으로 이동하는 신호.",
+                "whatHappened": "AI Agent는 사람이 준 목표를 여러 단계로 쪼개고, 도구를 호출하며, 작업을 지속하는 시스템으로 논의되고 있다.",
+                "whyImportant": "AI가 정보 생성 도구에서 실행과 조율의 주체로 이동할 가능성을 보여준다.",
+                "sigakView": "에이전트의 핵심은 자동화가 아니라 책임의 재배치다. 인간은 실행보다 방향과 검증을 맡게 된다.",
+                "nextFlow": "ChatGPT → 도구 사용 → 에이전트 → 업무 재구성 → AGI 논의",
+                "remainingQuestion": "AI가 일을 실행한다면, 인간은 무엇을 책임져야 할까?",
+                "people": [
+                  "AI researchers"
+                ],
+                "organizations": [
+                  "OpenAI",
+                  "Anthropic",
+                  "Google DeepMind"
+                ],
+                "tags": [
+                  "AI Agent",
+                  "업무 변화",
+                  "자동화"
+                ],
+                "imageAlt": "AI Agents placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              },
+              {
+                "image": "",
+                "imageCredit": "",
+                "imageLicense": "",
+                "imageSourceUrl": "",
+                "imageStatus": "placeholder",
+                "sourceStatus": "needs-verification",
+                "sources": [
+                  {
+                    "title": "AGI 논의 source verification needed",
+                    "publisher": "확인 필요",
+                    "url": "",
+                    "note": "v1 초안 데이터입니다. 공식 문서, 논문, 기관 발표, 원문 보도 등 신뢰 가능한 출처 확인 전까지 verified로 표시하지 않습니다.",
+                    "status": "needs-verification"
+                  }
+                ],
+                "relatedIds": [
+                  "agi-timeline"
+                ],
+                "id": "agi-discussion",
+                "year": "미래",
+                "title": "AGI 논의",
+                "era": "agi-discussion",
+                "category": "미래",
+                "summary": "범용 지능을 날짜보다 방향성으로 보게 만드는 논의.",
+                "whatHappened": "AGI는 특정 제품이나 날짜보다, AI가 점점 더 다양한 영역에서 문제를 해결하는 방향으로 논의되고 있다.",
+                "whyImportant": "AGI 논의는 인간의 일, 교육, 창작, 판단의 구조가 어디까지 바뀔지를 묻는 기준점이다.",
+                "sigakView": "AGI는 어느 날 도착하는 사건이라기보다, AI가 점점 더 넓은 능력을 획득해가는 방향성이다.",
+                "nextFlow": "멀티모달 → 에이전트 → 장기 작업 → 범용성 논의 → AGI 관측소",
+                "remainingQuestion": "AGI는 갑자기 도착하는 사건일까, 우리가 이미 통과하고 있는 과정일까?",
+                "people": [
+                  "Demis Hassabis",
+                  "Sam Altman",
+                  "Geoffrey Hinton",
+                  "Yann LeCun"
+                ],
+                "organizations": [
+                  "OpenAI",
+                  "Google DeepMind",
+                  "Anthropic"
+                ],
+                "tags": [
+                  "AGI",
+                  "미래",
+                  "관측"
+                ],
+                "imageAlt": "AGI 논의 placeholder image",
+                "imageType": "concept",
+                "imageAuthor": "",
+                "imageSourceTitle": "",
+                "imageModified": false,
+                "cropNote": ""
+              }
+            ],
+            "ctas": [
+              {
+                "id": "agi-timeline",
+                "title": "AGI 관측소로 이어서 보기",
+                "description": "AI 연대기가 과거에서 현재까지의 축적이라면, AGI 관측소는 이 흐름이 어디로 향하는지 보는 다음 지도다."
+              },
+              {
+                "id": "ai-speed-experience",
+                "title": "AI 발전속도 체험하기",
+                "description": "AI가 왜 최근 갑자기 빨라진 것처럼 느껴지는지, 선형이 아니라 가속의 감각으로 확인한다."
+              }
+            ]
+          }
         },
         {
           "id": "agi-timeline",
-          "title": "AGI 타임라인",
+          "title": "AGI 관측소",
           "axis": "시간",
-          "summary": "AGI는 갑자기 등장하는 하나의 사건이 아니라, AI가 점점 더 넓은 능력을 획득해가는 과정이다.",
-          "description": "AGI 타임라인은 인공지능이 좁은 문제 해결에서 범용적 문제 해결 능력으로 확장되어가는 흐름을 시간순으로 보여준다.",
+          "summary": "AGI는 어느 날 도착하는 사건이라기보다, AI가 점점 더 넓은 능력을 획득해가는 방향성이다.",
+          "description": "AGI를 하나의 예언 날짜가 아니라, AI가 획득해가는 능력과 관측 지표로 읽는 SIGAK.AI의 첫 대표 콘텐츠.",
           "sections": {
-            "what": "AGI 타임라인은 인공지능이 좁은 문제 해결에서 범용적 문제 해결 능력으로 확장되어가는 흐름을 시간순으로 보여준다.",
-            "why": "AGI 논의는 단순한 미래 예측이 아니라, 인간의 일, 교육, 창작, 판단의 구조가 어떻게 바뀔지를 가늠하게 하는 기준점이다.",
-            "sigak": "AGI 논의에서 중요한 것은 정확히 몇 년도에 AGI가 오느냐만이 아니다.\n더 중요한 것은 AI가 인간의 예상보다 훨씬 빠르게 능력의 범위를 넓혀가고 있다는 점이다.\n우리는 AGI를 하나의 날짜가 아니라, 이미 진행 중인 방향성으로 바라볼 필요가 있다.",
-            "flow": "튜링 테스트 → 다트머스 회의 → 딥러닝 → AlphaGo → ChatGPT → 멀티모달 AI → AI Agent → AGI 논의",
+            "what": "AGI는 흔히 사람처럼 다양한 문제를 스스로 해결할 수 있는 범용 인공지능으로 설명된다. 하지만 실제로는 하나의 고정된 정의가 아니라, 능력·자율성·경제적 영향·위험 인식에 따라 다르게 해석되는 말이다.",
+            "why": "AGI 논의는 단순한 미래 예측이 아니다. 인간의 일, 교육, 창작, 판단의 구조가 어디까지 바뀔 수 있는지를 가늠하게 하는 기준점이다. 그래서 중요한 것은 “몇 년도에 오는가”만이 아니라 “어떤 능력이 이미 넓어지고 있는가”다.",
+            "sigak": "AGI 논의에서 중요한 것은 정확히 몇 년도에 AGI가 오느냐만이 아니다.\n더 중요한 것은 AI가 인간의 예상보다 빠르게 능력의 범위를 넓혀가고 있다는 점이다.\n우리는 AGI를 하나의 날짜가 아니라, 이미 진행 중인 방향성으로 바라볼 필요가 있다.",
+            "flow": "계산 → 학습 → 인식 → 생성 → 대화 → 멀티모달 → 도구 사용 → 에이전트성 → 범용성 논의",
             "question": "AGI는 어느 날 갑자기 도착하는 사건일까, 아니면 우리가 이미 통과하고 있는 과정일까?"
           },
           "tags": [
             "AGI",
-            "미래",
-            "타임라인"
+            "관측소",
+            "타임라인",
+            "범용성"
           ],
           "relatedIds": [
-            "ai-speed-experience",
-            "exponential-vs-linear",
-            "ai-as-environment",
             "alphago",
-            "chatgpt"
+            "chatgpt",
+            "ai-agent",
+            "ai-as-environment",
+            "question-ability",
+            "ai-speed-experience",
+            "exponential-vs-linear"
           ],
           "timelineItems": [
             {
               "year": "1950",
-              "label": "튜링 테스트"
+              "label": "튜링 테스트",
+              "ability": "생각의 기준",
+              "description": "기계가 생각할 수 있는가라는 질문이 지능 논의를 대중적 질문으로 만들었다."
             },
             {
               "year": "1956",
-              "label": "다트머스 회의"
+              "label": "다트머스 회의",
+              "ability": "AI라는 이름",
+              "description": "인공지능을 하나의 연구 분야로 부르기 시작한 상징적 출발점."
             },
             {
               "year": "2012",
-              "label": "AlexNet"
+              "label": "AlexNet",
+              "ability": "인식",
+              "description": "딥러닝이 이미지 인식에서 결정적 성능 향상을 보여주며 다시 중심으로 올라왔다."
             },
             {
               "year": "2016",
-              "label": "AlphaGo"
+              "label": "AlphaGo",
+              "ability": "전략과 탐색",
+              "description": "인간 최고수의 직관 바깥에서 새로운 수를 탐색할 수 있음을 보여줬다."
             },
             {
               "year": "2022",
-              "label": "ChatGPT"
+              "label": "ChatGPT",
+              "ability": "대화와 생성",
+              "description": "AI가 일반인의 언어 인터페이스 안으로 들어오며 범용 도구처럼 느껴지기 시작했다."
             },
             {
               "year": "2024",
-              "label": "멀티모달 AI"
+              "label": "멀티모달 AI",
+              "ability": "보고 듣고 말하기",
+              "description": "텍스트를 넘어 이미지, 음성, 영상까지 함께 다루는 방향으로 능력이 넓어졌다."
             },
             {
               "year": "2025~",
-              "label": "AI Agent"
+              "label": "AI Agent",
+              "ability": "도구 사용과 장기 작업",
+              "description": "AI가 단발 답변을 넘어 목표를 나누고 도구를 쓰며 작업을 이어가는 방향으로 이동한다."
             },
             {
               "year": "미래",
-              "label": "AGI 논의"
+              "label": "AGI 논의",
+              "ability": "범용성",
+              "description": "특정 작업의 성능보다 여러 영역을 넘나드는 문제 해결 능력이 핵심 질문이 된다."
+            }
+          ],
+          "perspectiveItems": [
+            {
+              "name": "OpenAI",
+              "focus": "범용성과 경제적 영향",
+              "reading": "AGI를 폭넓은 작업에서 인간 수준 이상의 가치를 만들 수 있는 시스템으로 보는 관점과 가깝다.",
+              "sourceNote": "관점 초안. 정확한 표현과 최신 정의는 공식 문서 기준으로 출처 확인 필요.",
+              "sourceUrl": ""
+            },
+            {
+              "name": "DeepMind",
+              "focus": "능력 단계와 안전 평가",
+              "reading": "AGI를 단일 선언보다 성능, 일반성, 위험 수준을 함께 평가해야 하는 대상으로 보는 방향과 가깝다.",
+              "sourceNote": "관점 초안. 정확한 표현과 최신 정의는 DeepMind 공식 자료 확인 필요.",
+              "sourceUrl": ""
+            },
+            {
+              "name": "Anthropic",
+              "focus": "안전성과 통제 가능성",
+              "reading": "강력한 AI가 사회에 미칠 영향과 인간이 통제 가능한 방식으로 발전하는지를 중시하는 관점으로 정리할 수 있다.",
+              "sourceNote": "관점 초안. 특정 발언으로 단정하지 않으며 공식 자료 확인 필요.",
+              "sourceUrl": ""
+            },
+            {
+              "name": "Geoffrey Hinton",
+              "focus": "위험과 인간 이해의 한계",
+              "reading": "AI가 인간보다 빠르게 능력을 획득할 수 있다는 위험 감각을 강하게 제기해온 인물로 볼 수 있다.",
+              "sourceNote": "관점 초안. 공개 인터뷰별 표현 차이가 있어 출처 확인 필요.",
+              "sourceUrl": ""
+            },
+            {
+              "name": "Yann LeCun",
+              "focus": "현재 AI의 한계와 세계 모델",
+              "reading": "현재의 대형 언어모델만으로 AGI를 곧장 설명하기 어렵고, 세계를 이해하는 모델이 더 필요하다는 방향의 관점으로 정리할 수 있다.",
+              "sourceNote": "관점 초안. 최신 발언과 공식 문서 기준으로 출처 확인 필요.",
+              "sourceUrl": ""
+            }
+          ],
+          "observationMetrics": [
+            {
+              "title": "언어 이해",
+              "description": "문장을 맞히는 수준을 넘어 맥락과 의도를 얼마나 안정적으로 읽는가."
+            },
+            {
+              "title": "추론",
+              "description": "정답을 외우는 것이 아니라 여러 단계를 거쳐 이유를 만들 수 있는가."
+            },
+            {
+              "title": "도구 사용",
+              "description": "검색, 코드, 계산기 같은 외부 도구를 목적에 맞게 선택하고 사용할 수 있는가."
+            },
+            {
+              "title": "멀티모달 이해",
+              "description": "텍스트뿐 아니라 이미지, 음성, 영상까지 하나의 맥락으로 다룰 수 있는가."
+            },
+            {
+              "title": "장기 작업 수행",
+              "description": "한 번의 답변이 아니라 목표를 나누고 끝까지 이어갈 수 있는가."
+            },
+            {
+              "title": "에이전트성",
+              "description": "사람이 매번 지시하지 않아도 다음 행동을 계획하고 실행할 수 있는가."
+            },
+            {
+              "title": "자기개선 가능성",
+              "description": "자신의 실수를 발견하고 더 나은 전략으로 바꿀 수 있는가."
+            },
+            {
+              "title": "현실 세계와의 연결",
+              "description": "디지털 답변을 넘어 실제 도구, 업무, 사회 시스템과 연결될 수 있는가."
+            }
+          ],
+          "scenarios": [
+            {
+              "title": "점진적 확장",
+              "description": "AGI가 어느 날 갑자기 등장하기보다 언어, 도구 사용, 멀티모달, 에이전트성이 조금씩 결합되며 넓어지는 흐름."
+            },
+            {
+              "title": "갑작스러운 도약",
+              "description": "여러 능력 조합이 특정 순간 임계점을 넘으며 사회가 체감하는 변화가 급격해지는 경우."
+            },
+            {
+              "title": "이름 없이 스며드는 AGI",
+              "description": "공식적인 AGI 선언보다 먼저, 사람들의 일상과 업무가 이미 AGI에 가까운 시스템 위에서 돌아가게 되는 경우."
+            }
+          ],
+          "remainingQuestions": [
+            "AGI는 어느 날 갑자기 도착하는 사건일까, 이미 통과 중인 과정일까?",
+            "인간이 이해하지 못하는 답을 AI가 낸다면 우리는 그것을 어떻게 받아들여야 할까?",
+            "AGI가 온다는 말보다, 어떤 능력이 이미 확장되고 있는지를 보는 것이 더 중요한 이유는 무엇일까?"
+          ],
+          "agiForecasts": [
+            {
+              "id": "demis-hassabis",
+              "name": "Demis Hassabis",
+              "organization": "Google DeepMind",
+              "role": "DeepMind CEO",
+              "agiDefinition": "인간 수준의 광범위한 인지 능력과 문제 해결 능력에 가까운 관점으로 요약할 수 있다.",
+              "predictedTimeline": "5~10년 안 또는 2030년 전후 가능성으로 알려져 있으나, 현재 데이터에는 검증된 출처를 연결하지 않았다.",
+              "predictedYear": "2030 전후",
+              "confidenceNote": "예상 시점은 출처 확인 전까지 단정하지 않는다.",
+              "sourceTitle": "공개 발언 출처 확인 필요",
+              "sourcePublisher": "확인 필요",
+              "sourceUrl": "",
+              "sourceStatus": "needs-verification",
+              "sigakView": "Hassabis는 AGI를 인간 대체보다 과학 발견과 문제 해결을 확장하는 지능으로 보는 경향이 있다.",
+              "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Demis_Hassabis_Royal_Society_(cropped).jpg",
+              "imageAlt": "Demis Hassabis portrait from the Royal Society",
+              "imageCredit": "Demis Hassabis Royal Society (cropped).jpg, Duncan.Hull / The Royal Society, via Wikimedia Commons",
+              "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis_Royal_Society_(cropped).jpg",
+              "imageLicense": "CC BY-SA 4.0",
+              "imageStatus": "verified",
+              "imageModified": true,
+              "cropNote": "Commons CropTool cropped image; displayed with object-fit cover."
+            },
+            {
+              "id": "sam-altman",
+              "name": "Sam Altman",
+              "organization": "OpenAI",
+              "role": "CEO",
+              "agiDefinition": "OpenAI의 AGI 정의와 맞닿아, 경제적으로 가치 있는 작업과 자율성의 확장을 중심으로 읽을 수 있다.",
+              "predictedTimeline": "명확한 단정 연도는 이 데이터에서 확정하지 않는다.",
+              "predictedYear": "미정",
+              "confidenceNote": "개인 발언으로서의 예상 시점은 별도 출처 검증이 필요하다.",
+              "sourceTitle": "공개 발언 출처 확인 필요",
+              "sourcePublisher": "확인 필요",
+              "sourceUrl": "",
+              "sourceStatus": "needs-verification",
+              "sigakView": "Altman의 관점은 AGI를 연구 목표이면서 동시에 제품, 경제, 거버넌스가 얽힌 현실 문제로 보게 만든다.",
+              "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sam_Altman_November_2022.jpg",
+              "imageAlt": "Sam Altman portrait at The Grove 2022",
+              "imageCredit": "Sam Altman November 2022.jpg, Village Global, via Wikimedia Commons",
+              "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_November_2022.jpg",
+              "imageLicense": "CC BY 2.0",
+              "imageStatus": "verified",
+              "imageModified": false,
+              "cropNote": "Portrait-oriented source image; displayed with object-fit cover."
+            },
+            {
+              "id": "elon-musk",
+              "name": "Elon Musk",
+              "organization": "xAI / Tesla / SpaceX",
+              "role": "Founder / CEO",
+              "agiDefinition": "AGI와 초지능을 인간 문명에 큰 영향을 줄 수 있는 강력한 일반 지능으로 보는 경향이 있다.",
+              "predictedTimeline": "구체 전망은 공개 발언별 맥락 차이가 크므로 출처 확인 전까지 단정하지 않는다.",
+              "predictedYear": "확인 필요",
+              "confidenceNote": "AGI 예상 시점과 표현은 인터뷰별 차이가 있어 별도 출처 검증이 필요하다.",
+              "sourceTitle": "공개 발언 출처 확인 필요",
+              "sourcePublisher": "확인 필요",
+              "sourceUrl": "",
+              "sourceStatus": "needs-verification",
+              "sigakView": "Musk의 관점은 AGI 논의를 기술 낙관보다 문명적 리스크와 통제 문제로 끌고 간다.",
+              "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Elon_Musk_close-up_(cropped).jpg",
+              "imageAlt": "Elon Musk close-up portrait at the United States Air Force Academy in 2022",
+              "imageCredit": "Elon Musk close-up (cropped).jpg, Justin Pacheco / U.S. Air Force, via Wikimedia Commons",
+              "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_close-up_(cropped).jpg",
+              "imageLicense": "Public domain, U.S. Government work",
+              "imageStatus": "verified",
+              "imageModified": true,
+              "cropNote": "Commons cropped image from U.S. Air Force photo; displayed with object-fit cover."
+            },
+            {
+              "id": "geoffrey-hinton",
+              "name": "Geoffrey Hinton",
+              "organization": "University of Toronto / 전 Google",
+              "role": "AI researcher",
+              "agiDefinition": "AI의 능력 확장과 위험, 인간이 통제하기 어려운 지능의 가능성에 강하게 주목하는 관점.",
+              "predictedTimeline": "출처 확인 전에는 특정 연도를 단정하지 않는다.",
+              "predictedYear": "확인 필요",
+              "confidenceNote": "인터뷰별 표현 차이가 크므로 구체 연도와 문장은 별도 출처 검증이 필요하다.",
+              "sourceTitle": "공개 인터뷰 출처 확인 필요",
+              "sourcePublisher": "확인 필요",
+              "sourceUrl": "",
+              "sourceStatus": "needs-verification",
+              "sigakView": "Hinton의 관점은 AGI 논의를 능력의 발전뿐 아니라 통제와 위험의 문제로 보게 만든다.",
+              "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Geoffrey_E._Hinton,_2024_Nobel_Prize_Laureate_in_Physics_(3x4_cropped).jpg",
+              "imageAlt": "Geoffrey Hinton portrait at the 2024 Nobel Prize week",
+              "imageCredit": "Geoffrey E. Hinton, 2024 Nobel Prize Laureate in Physics (3x4 cropped).jpg, Arthur Petron, via Wikimedia Commons",
+              "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Geoffrey_E._Hinton,_2024_Nobel_Prize_Laureate_in_Physics_(3x4_cropped).jpg",
+              "imageLicense": "CC BY-SA 4.0",
+              "imageStatus": "verified",
+              "imageModified": true,
+              "cropNote": "WikiPortraits/Commons CropTool cropped image; displayed with object-fit cover."
+            },
+            {
+              "id": "openai",
+              "name": "OpenAI",
+              "organization": "OpenAI",
+              "role": "AI research company",
+              "agiDefinition": "대부분의 경제적으로 가치 있는 작업에서 인간을 능가하는 고도로 자율적인 시스템이라는 공식 정의 계열.",
+              "predictedTimeline": "명확한 단정 연도 없음.",
+              "predictedYear": "미정",
+              "confidenceNote": "정의는 공식 Charter 기준으로 확인 가능하지만, 도달 시점은 단정하지 않는다.",
+              "sourceTitle": "OpenAI Charter",
+              "sourcePublisher": "OpenAI",
+              "sourceUrl": "https://openai.com/charter/",
+              "sourceStatus": "verified",
+              "sigakView": "OpenAI는 AGI를 경제적 가치와 자율성의 관점에서 정의해왔다.",
+              "image": "",
+              "imageAlt": "OpenAI profile placeholder",
+              "imageCredit": "",
+              "imageSourceUrl": "",
+              "imageLicense": "",
+              "imageStatus": "placeholder",
+              "imageModified": false,
+              "cropNote": ""
+            },
+            {
+              "id": "deepmind-levels-of-agi",
+              "name": "Google DeepMind / Levels of AGI",
+              "organization": "Google DeepMind",
+              "role": "AGI measurement framework",
+              "agiDefinition": "성능, 일반성, 자율성의 수준으로 AGI를 단계화하는 관점.",
+              "predictedTimeline": "명확한 단정 연도보다 측정 프레임워크 중심.",
+              "predictedYear": "프레임워크",
+              "confidenceNote": "논문은 AGI를 왔다/안 왔다의 이분법보다 수준과 폭으로 보게 만든다.",
+              "sourceTitle": "Levels of AGI for Operationalizing Progress on the Path to AGI",
+              "sourcePublisher": "Google DeepMind",
+              "sourceUrl": "https://deepmind.google/research/publications/66938/",
+              "sourceStatus": "verified",
+              "sigakView": "DeepMind식 접근은 “AGI가 왔다/안 왔다”보다 어느 수준에 도달했는지를 보게 만든다.",
+              "image": "",
+              "imageAlt": "Google DeepMind / Levels of AGI profile placeholder",
+              "imageCredit": "",
+              "imageSourceUrl": "",
+              "imageLicense": "",
+              "imageStatus": "placeholder",
+              "imageModified": false,
+              "cropNote": ""
+            },
+            {
+              "id": "yann-lecun",
+              "name": "Yann LeCun",
+              "organization": "Meta AI / NYU",
+              "role": "AI researcher",
+              "agiDefinition": "현재 LLM만으로는 인간 수준 지능에 충분하지 않고, 세계를 이해하는 다른 구조가 필요하다고 보는 관점.",
+              "predictedTimeline": "출처 확인 전에는 특정 연도를 단정하지 않는다.",
+              "predictedYear": "확인 필요",
+              "confidenceNote": "최신 발언과 논문 맥락에 따라 정리해야 하므로 출처 검증이 필요하다.",
+              "sourceTitle": "공개 발언 출처 확인 필요",
+              "sourcePublisher": "확인 필요",
+              "sourceUrl": "",
+              "sourceStatus": "needs-verification",
+              "sigakView": "LeCun의 관점은 AGI 논쟁이 단순한 속도 경쟁이 아니라 지능 구조에 대한 논쟁임을 보여준다.",
+              "image": "",
+              "imageAlt": "Yann LeCun profile placeholder",
+              "imageCredit": "",
+              "imageSourceUrl": "",
+              "imageLicense": "",
+              "imageStatus": "placeholder",
+              "imageModified": false,
+              "cropNote": ""
             }
           ]
         },
@@ -240,7 +1601,7 @@
     {
       "id": "people",
       "title": "사람",
-      "description": "AI 시대를 만든 인물과 그들의 생각",
+      "description": "AI 시대를 만든 사람과 그들의 관점",
       "role": "AI를 기술이 아니라 사람과 이야기로 이해하게 만드는 축",
       "topics": [
         {
@@ -415,7 +1776,7 @@
     {
       "id": "map",
       "title": "지도",
-      "description": "AI가 바꾸는 분야와 개념의 변화",
+      "description": "AI가 바꾸는 일, 공부, 창작, 산업의 변화",
       "role": "AI가 우리의 삶, 일, 공부, 창작에 어떤 영향을 주는지 보여주는 축",
       "topics": [
         {
@@ -614,7 +1975,7 @@
     {
       "id": "archive",
       "title": "기록",
-      "description": "AI 시대의 사건, 사고, 발언, 콘텐츠 아카이브",
+      "description": "중요한 사건과 발언을 쌓아두는 근거",
       "role": "중요한 사건과 자료를 쌓아두는 근거와 아카이브 축",
       "topics": [
         {
@@ -808,7 +2169,7 @@
     {
       "id": "view",
       "title": "시각",
-      "description": "AI 사건을 바라보는 해석과 질문",
+      "description": "사건의 의미와 인간에게 남는 질문",
       "role": "단순 정보가 아니라 사건의 의미와 방향성을 해석하는 축",
       "topics": [
         {
