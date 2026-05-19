@@ -59,6 +59,8 @@ body {
     radial-gradient(circle at 12% 0%, rgba(20, 184, 166, 0.16), transparent 28%),
     linear-gradient(180deg, rgba(247, 248, 245, 0.98) 0%, rgba(250, 250, 247, 1) 45%, rgba(247, 248, 245, 1) 100%);
   color: var(--sigak-text-primary);
+  overflow-wrap: anywhere;
+  word-break: keep-all;
 }
 
 .sigak-mvp.text-white {

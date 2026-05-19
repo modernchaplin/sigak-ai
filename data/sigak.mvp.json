@@ -4,7 +4,7 @@
       "id": "time",
       "title": "시간",
       "description": "AI가 어떻게 쌓이고 가속되어 왔는가",
-      "role": "AI의 역사, 타임라인, 과거-현재-미래 흐름을 보여주는 축",
+      "role": "AI의 과거-현재-미래 흐름을 연결해 변화가 어떻게 누적되고 가속되는지 보여주는 축",
       "topics": [
         {
           "id": "ai-history",
@@ -186,11 +186,14 @@
                   "계산"
                 ],
                 "imageAlt": "McCulloch-Pitts Neuron placeholder image",
-                "imageType": "concept",
+                "imageType": "concept-graphic",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "concept-icon",
+                "visualLabel": "논리 회로",
+                "visualDescription": "지능을 계산 가능한 구조로 상상한 첫 씨앗"
               },
               {
                 "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alan_Turing_(1951).jpg",
@@ -232,11 +235,14 @@
                   "지능"
                 ],
                 "imageAlt": "Alan Turing portrait photographed in 1951",
-                "imageType": "person",
+                "imageType": "person-context",
                 "imageAuthor": "Elliott & Fry",
                 "imageSourceTitle": "Alan Turing (1951).jpg",
                 "imageModified": false,
-                "cropNote": "원본 파일은 수정하지 않고 카드에서 object-fit cover로 표시합니다."
+                "cropNote": "원본 파일은 수정하지 않고 카드에서 object-fit cover로 표시합니다.",
+                "visualFallbackType": "person-event-card",
+                "visualLabel": "Alan Turing의 질문",
+                "visualDescription": "한 인물의 질문이 AI 연구의 철학적 기준이 되었다"
               },
               {
                 "image": "",
@@ -282,11 +288,14 @@
                   "낙관"
                 ],
                 "imageAlt": "Dartmouth Conference placeholder image",
-                "imageType": "event",
+                "imageType": "archival-document",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "paper-card",
+                "visualLabel": "Dartmouth 1956",
+                "visualDescription": "AI라는 이름이 학문 분야로 모인 장면"
               },
               {
                 "image": "",
@@ -328,11 +337,14 @@
                   "학습"
                 ],
                 "imageAlt": "Perceptron placeholder image",
-                "imageType": "concept",
+                "imageType": "person-context",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "person-event-card",
+                "visualLabel": "Rosenblatt의 퍼셉트론",
+                "visualDescription": "낙관과 한계가 함께 시작된 초기 신경망"
               },
               {
                 "image": "",
@@ -374,11 +386,14 @@
                   "ELIZA 효과"
                 ],
                 "imageAlt": "ELIZA placeholder image",
-                "imageType": "event",
+                "imageType": "product-interface",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "ui-card",
+                "visualLabel": "ELIZA 대화",
+                "visualDescription": "사람이 기계에 이해를 투사하기 시작한 순간"
               },
               {
                 "image": "",
@@ -421,11 +436,14 @@
                   "신경망"
                 ],
                 "imageAlt": "Perceptrons Critique placeholder image",
-                "imageType": "concept",
+                "imageType": "archival-document",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "paper-card",
+                "visualLabel": "Perceptrons 비판",
+                "visualDescription": "한 권의 비판이 연구 흐름을 얼어붙게 만든 사건"
               },
               {
                 "image": "",
@@ -467,11 +485,14 @@
                   "기대"
                 ],
                 "imageAlt": "Lighthill Report placeholder image",
-                "imageType": "event",
+                "imageType": "archival-document",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "paper-card",
+                "visualLabel": "Lighthill Report",
+                "visualDescription": "기대와 성과의 간극이 정책 판단으로 돌아온 장면"
               },
               {
                 "image": "",
@@ -516,11 +537,14 @@
                   "딥러닝"
                 ],
                 "imageAlt": "Backpropagation Rediscovered placeholder image",
-                "imageType": "concept",
+                "imageType": "person-context",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "person-event-card",
+                "visualLabel": "Hinton과 역전파",
+                "visualDescription": "침체기 뒤에서 다시 살아난 학습의 방법"
               },
               {
                 "image": "",
@@ -562,11 +586,14 @@
                   "특화 AI"
                 ],
                 "imageAlt": "Deep Blue placeholder image",
-                "imageType": "event",
+                "imageType": "real-event-photo",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "timeline-card",
+                "visualLabel": "Deep Blue",
+                "visualDescription": "기계가 인간 챔피언을 특정 영역에서 넘어선 상징"
               },
               {
                 "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Geoffrey_E._Hinton,_2024_Nobel_Prize_Laureate_in_Physics_(3x4_cropped).jpg",
@@ -610,11 +637,14 @@
                   "GPU"
                 ],
                 "imageAlt": "Geoffrey Hinton portrait at the 2024 Nobel Prize week",
-                "imageType": "person",
+                "imageType": "person-context",
                 "imageAuthor": "Arthur Petron",
                 "imageSourceTitle": "Geoffrey E. Hinton, 2024 Nobel Prize Laureate in Physics (3x4 cropped).jpg",
                 "imageModified": true,
-                "cropNote": "Wikimedia Commons의 3x4 cropped 파일을 사용하며 카드에서는 object-fit cover로 표시합니다."
+                "cropNote": "Wikimedia Commons의 3x4 cropped 파일을 사용하며 카드에서는 object-fit cover로 표시합니다.",
+                "visualFallbackType": "person-event-card",
+                "visualLabel": "AlexNet 돌파",
+                "visualDescription": "GPU, 데이터, 신경망이 한 지점에서 만난 순간"
               },
               {
                 "image": "",
@@ -656,11 +686,14 @@
                   "이미지"
                 ],
                 "imageAlt": "GANs placeholder image",
-                "imageType": "concept",
+                "imageType": "concept-graphic",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "abstract-graphic",
+                "visualLabel": "Generator ↔ Discriminator",
+                "visualDescription": "두 모델의 경쟁으로 생성이라는 감각이 열렸다"
               },
               {
                 "image": "",
@@ -707,11 +740,14 @@
                   "직관"
                 ],
                 "imageAlt": "AlphaGo placeholder image",
-                "imageType": "event",
+                "imageType": "real-event-photo",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "timeline-card",
+                "visualLabel": "Move 37",
+                "visualDescription": "AI가 인간 직관 바깥의 수를 탐색하기 시작했다"
               },
               {
                 "image": "",
@@ -754,11 +790,14 @@
                   "LLM"
                 ],
                 "imageAlt": "Transformer placeholder image",
-                "imageType": "concept",
+                "imageType": "archival-document",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "paper-card",
+                "visualLabel": "Attention",
+                "visualDescription": "언어 AI의 공통 엔진이 된 구조적 전환"
               },
               {
                 "image": "",
@@ -802,11 +841,14 @@
                   "언어모델"
                 ],
                 "imageAlt": "BERT / GPT-1 placeholder image",
-                "imageType": "concept",
+                "imageType": "concept-graphic",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "ui-card",
+                "visualLabel": "Language Model",
+                "visualDescription": "언어 모델이 범용 인터페이스로 가기 시작한 시기"
               },
               {
                 "image": "",
@@ -848,11 +890,14 @@
                   "프롬프트"
                 ],
                 "imageAlt": "GPT-3 placeholder image",
-                "imageType": "concept",
+                "imageType": "concept-graphic",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "abstract-graphic",
+                "visualLabel": "Scale",
+                "visualDescription": "규모가 능력의 체감 변화를 만들 수 있음을 보여준 사건"
               },
               {
                 "image": "",
@@ -897,11 +942,14 @@
                   "인터페이스"
                 ],
                 "imageAlt": "ChatGPT placeholder image",
-                "imageType": "event",
+                "imageType": "product-interface",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "ui-card",
+                "visualLabel": "ChatGPT 대중화",
+                "visualDescription": "AI가 연구실에서 모두의 대화창으로 이동했다"
               },
               {
                 "image": "",
@@ -943,11 +991,14 @@
                   "코딩"
                 ],
                 "imageAlt": "GPT-4 placeholder image",
-                "imageType": "concept",
+                "imageType": "product-interface",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "ui-card",
+                "visualLabel": "멀티모달 추론",
+                "visualDescription": "AI가 말뿐 아니라 보고 추론하는 쪽으로 넓어졌다"
               },
               {
                 "image": "",
@@ -993,11 +1044,14 @@
                   "영상 생성"
                 ],
                 "imageAlt": "Sora / Multimodal AI placeholder image",
-                "imageType": "event",
+                "imageType": "product-interface",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "ui-card",
+                "visualLabel": "Text → Video",
+                "visualDescription": "생성이 텍스트를 넘어 시간과 장면으로 확장됐다"
               },
               {
                 "image": "",
@@ -1045,11 +1099,14 @@
                   "자동화"
                 ],
                 "imageAlt": "AI Agents placeholder image",
-                "imageType": "concept",
+                "imageType": "concept-graphic",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "timeline-card",
+                "visualLabel": "Plan → Tool → Act",
+                "visualDescription": "답변하는 AI에서 실행하는 AI로 넘어가는 구간"
               },
               {
                 "image": "",
@@ -1098,11 +1155,14 @@
                   "관측"
                 ],
                 "imageAlt": "AGI 논의 placeholder image",
-                "imageType": "concept",
+                "imageType": "concept-graphic",
                 "imageAuthor": "",
                 "imageSourceTitle": "",
                 "imageModified": false,
-                "cropNote": ""
+                "cropNote": "",
+                "visualFallbackType": "abstract-graphic",
+                "visualLabel": "AGI?",
+                "visualDescription": "날짜보다 능력의 범위와 관측 기준을 보게 하는 질문"
               }
             ],
             "ctas": [
@@ -1477,26 +1537,75 @@
         },
         {
           "id": "exponential-vs-linear",
-          "title": "기하급수적 vs 선형적",
+          "title": "기하급수적 변화 vs 선형적 사고",
           "axis": "시간",
-          "summary": "AI 시대의 속도를 이해하기 위한 가장 중요한 사고 차이를 본다.",
-          "description": "변화가 일정하게 쌓이는지, 어느 순간 급격히 커지는지 구분하는 관점.",
+          "summary": "왜 우리는 AI의 속도를 계속 과소평가하는가.",
+          "description": "그래프와 30걸음 사고실험으로 인간의 선형적 직관이 누적과 가속의 변화를 왜 늦게 알아차리는지 체험하는 시간 축 대표 페이지.",
           "sections": {
-            "what": "선형적 변화는 일정한 속도로 늘고, 기하급수적 변화는 누적될수록 폭발적으로 커진다.",
-            "why": "AI 변화는 성능, 데이터, 사용자가 서로를 밀어 올리는 구조를 가진다.",
-            "sigak": "SIGAK.AI는 AI를 이해하려면 속도 자체를 읽는 사고가 필요하다고 본다.",
-            "flow": "작은 개선 → 누적 효과 → 임계점 → 생활 방식 변화",
-            "question": "우리는 여전히 어제의 속도로 내일을 예측하고 있는가?"
+            "what": "인간은 미래를 직선으로 상상하지만, AI는 컴퓨트, 데이터, 모델, 도구 사용, 사회적 활용이 누적되며 어느 순간 폭발적으로 체감된다.",
+            "why": "AI를 이해하려면 단순히 최신 기술 이름을 외우는 것보다 변화가 쌓이는 방식을 먼저 이해해야 한다. 초반에는 거의 차이가 없어 보여도, 뒤쪽 몇 걸음에서 체감은 갑자기 달라진다.",
+            "sigak": "AI는 갑자기 온 것이 아니다. 우리가 곡선의 뒤쪽을 갑자기 보게 된 것이다. AI 시대를 이해하려면 기술 이름보다 변화의 곡선을 먼저 봐야 한다.",
+            "flow": "AI 연대기 → 기하급수적 변화 vs 선형적 사고 → AGI 관측소",
+            "question": "우리는 지금 곡선의 몇 번째 걸음에 서 있을까?"
           },
           "tags": [
-            "변화",
             "속도",
-            "사고방식"
+            "사고실험",
+            "스케일링",
+            "AI 연대기"
           ],
           "relatedIds": [
+            "ai-history",
             "ai-speed-experience",
             "agi-timeline",
-            "ai-as-environment"
+            "chatgpt",
+            "alphago",
+            "important-capability"
+          ],
+          "sourceStatus": "needs-verification",
+          "sources": [
+            {
+              "title": "Scaling Laws for Neural Language Models",
+              "publisher": "arXiv",
+              "url": "https://arxiv.org/abs/2001.08361",
+              "note": "스케일링 법칙 설명의 배경 출처입니다. 페이지의 그래프는 논문 그래프 복제가 아니라 SIGAK.AI가 직접 만든 개념 그래프입니다.",
+              "status": "verified"
+            },
+            {
+              "title": "Training Compute-Optimal Large Language Models",
+              "publisher": "arXiv",
+              "url": "https://arxiv.org/abs/2203.15556",
+              "note": "Chinchilla 계열 compute-optimal scaling 논의의 배경 출처입니다. 정확한 수치 그래프는 본 페이지에서 직접 재현하지 않습니다.",
+              "status": "verified"
+            },
+            {
+              "title": "Moore’s Law: Fun Facts",
+              "publisher": "Intel",
+              "url": "https://www.intel.com/content/www/us/en/history/history-moores-law-fun-facts-factsheet.html",
+              "note": "무어의 법칙을 역사적 발전 감각으로 설명하기 위한 참고 출처입니다. 현재도 동일 속도로 유지된다고 단정하지 않습니다.",
+              "status": "verified"
+            },
+            {
+              "title": "Since 2010, the training computation of notable AI systems has doubled every six months",
+              "publisher": "Our World in Data",
+              "url": "https://ourworldindata.org/data-insights/since-2010-the-training-computation-of-notable-ai-systems-has-doubled-every-six-months",
+              "note": "AI training compute 증가 기울기 설명의 참고 출처입니다. 본 페이지에서는 원본 차트 이미지를 복사하지 않고 직접 만든 개념 그래프로만 표현합니다.",
+              "status": "verified"
+            },
+            {
+              "title": "Data on AI Models",
+              "publisher": "Epoch AI",
+              "url": "https://epoch.ai/data/large-scale-ai-models",
+              "note": "notable AI models의 training compute, release date, organization 등을 추적하는 데이터베이스입니다. 본 페이지는 데이터베이스를 실시간 연동하지 않습니다.",
+              "status": "verified"
+            },
+            {
+              "title": "2025 AI Index Report",
+              "publisher": "Stanford HAI",
+              "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+              "note": "AI 성능, 투자, 사용, 정책 흐름을 보는 보조 참고 출처입니다. 페이지의 체험 그래프는 SIGAK.AI가 직접 만든 개념 시각화입니다.",
+              "status": "verified"
+            }
           ]
         },
         {
@@ -1602,7 +1711,7 @@
       "id": "people",
       "title": "사람",
       "description": "AI 시대를 만든 사람과 그들의 관점",
-      "role": "AI를 기술이 아니라 사람과 이야기로 이해하게 만드는 축",
+      "role": "AI를 기술이 아니라 사람의 선택, 관점, 발언으로 이해하게 만드는 축",
       "topics": [
         {
           "id": "sam-altman",
@@ -1777,7 +1886,7 @@
       "id": "map",
       "title": "지도",
       "description": "AI가 바꾸는 일, 공부, 창작, 산업의 변화",
-      "role": "AI가 우리의 삶, 일, 공부, 창작에 어떤 영향을 주는지 보여주는 축",
+      "role": "AI가 일, 공부, 창작, 산업의 구조를 어떻게 바꾸는지 보여주는 축",
       "topics": [
         {
           "id": "coding",
@@ -1976,7 +2085,7 @@
       "id": "archive",
       "title": "기록",
       "description": "중요한 사건과 발언을 쌓아두는 근거",
-      "role": "중요한 사건과 자료를 쌓아두는 근거와 아카이브 축",
+      "role": "중요한 사건, 사고, 발언, 자료를 쌓아 해석의 근거로 삼는 축",
       "topics": [
         {
           "id": "deepfake-fraud",
@@ -2170,7 +2279,7 @@
       "id": "view",
       "title": "시각",
       "description": "사건의 의미와 인간에게 남는 질문",
-      "role": "단순 정보가 아니라 사건의 의미와 방향성을 해석하는 축",
+      "role": "사건을 설명하는 데서 끝나지 않고 인간에게 남는 질문을 정리하는 축",
       "topics": [
         {
           "id": "ai-as-environment",
