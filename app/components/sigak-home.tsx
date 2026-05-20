@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { ChatGptTimeline } from "./timeline/chatgpt-timeline";
 
 type ViewMode = "home" | "axis" | "detail";
 
@@ -553,6 +554,17 @@ function TopicDetailView({
     );
   }
 
+  if (topic.id === "ai-speed-experience") {
+    return (
+      <AiSpeedExperienceView
+        topic={topic}
+        relatedTopics={relatedTopics}
+        onBack={onBack}
+        onOpenTopic={onOpenTopic}
+      />
+    );
+  }
+
   const sections = getDetailSections(topic);
 
   return (
@@ -629,6 +641,150 @@ function TopicDetailView({
               ))}
             </div>
           </section>
+        )}
+      </article>
+    </section>
+  );
+}
+
+function AiSpeedExperienceView({
+  topic,
+  relatedTopics,
+  onBack,
+  onOpenTopic,
+}: {
+  topic: SigakTopic;
+  relatedTopics: SigakTopic[];
+  onBack: () => void;
+  onOpenTopic: (topicId: string) => void;
+}) {
+  const developmentAreas = [
+    {
+      title: "ChatGPT 발전",
+      status: "구현됨",
+      description: "대화형 AI가 에이전트형 모델로 넓어지는 흐름",
+      active: true,
+    },
+    {
+      title: "이미지 발전",
+      status: "준비 중",
+      description: "텍스트에서 고품질 이미지 생성으로 확장되는 흐름",
+      active: false,
+    },
+    {
+      title: "영상 발전",
+      status: "준비 중",
+      description: "이미지를 넘어 시간과 장면을 생성하는 흐름",
+      active: false,
+    },
+    {
+      title: "코딩 발전",
+      status: "준비 중",
+      description: "자동완성에서 에이전트형 개발로 이동하는 흐름",
+      active: false,
+    },
+  ];
+
+  return (
+    <section className="sigak-mvp min-h-[calc(100vh-4rem)] w-full px-4 py-10 text-white md:px-6 md:py-14">
+      <article className="mx-auto max-w-7xl">
+        <button
+          type="button"
+          onClick={onBack}
+          className="rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-300 transition hover:border-yellow-300 hover:text-yellow-200"
+        >
+          뒤로가기
+        </button>
+
+        <section className="mt-8 rounded-[2rem] border border-yellow-300/30 bg-zinc-950 p-5 md:p-9">
+          <p className="mono text-xs tracking-[0.22em] text-yellow-300">
+            SIGAK.AI / 시간 / 발전속도 체험
+          </p>
+          <h1 className="mt-5 text-4xl font-semibold leading-tight md:text-7xl">
+            AI 발전속도 체험
+          </h1>
+          <p className="mt-5 max-w-3xl text-2xl font-semibold leading-snug md:text-4xl">
+            몇 년 사이, AI는 얼마나 달라졌을까?
+          </p>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-zinc-400">
+            AI의 발전은 뉴스로 보면 흩어져 보이지만, 시간순으로 보면 속도가 보입니다.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {topic.tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-md border border-zinc-700 bg-black px-2.5 py-1 text-xs text-zinc-300"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="mono text-xs tracking-[0.2em] text-yellow-300">발전 영역 선택</p>
+              <h2 className="mt-2 text-3xl font-semibold">어떤 변화의 속도를 볼까?</h2>
+            </div>
+            <p className="max-w-lg text-sm leading-6 text-zinc-400">
+              지금은 ChatGPT 발전을 먼저 구현했습니다. 이미지, 영상, 코딩 발전은 같은 구조로 확장합니다.
+            </p>
+          </div>
+          <div className="grid gap-3 md:grid-cols-4">
+            {developmentAreas.map((area) => (
+              <article
+                key={area.title}
+                className={`rounded-2xl border p-4 ${
+                  area.active
+                    ? "border-yellow-300 bg-yellow-300/10"
+                    : "border-zinc-800 bg-zinc-950"
+                }`}
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <h3 className="text-lg font-semibold">{area.title}</h3>
+                  <span
+                    className={`rounded-full border px-2 py-0.5 text-[11px] ${
+                      area.active
+                        ? "border-yellow-300/70 text-yellow-300"
+                        : "border-zinc-800 text-zinc-500"
+                    }`}
+                  >
+                    {area.status}
+                  </span>
+                </div>
+                <p className="mt-3 text-sm leading-6 text-zinc-400">{area.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <div className="mb-4">
+            <p className="mono text-xs tracking-[0.2em] text-yellow-300">ChatGPT 발전</p>
+            <h2 className="mt-2 text-3xl font-semibold">대화형 AI의 속도</h2>
+          </div>
+          <ChatGptTimeline />
+        </section>
+
+        <section className="mt-8 grid gap-4 md:grid-cols-2">
+          <DetailSection
+            title="SIGAK.AI의 시각"
+            body={
+              "ChatGPT의 발전은 단순한 모델 업데이트의 기록이 아니다.\n대화형 AI가 텍스트 답변 도구에서 멀티모달, 음성, 에이전트, 컴퓨터 조작 능력으로 확장되어 온 흐름이다."
+            }
+            emphasized
+            wide
+          />
+          <DetailSection
+            title="남는 질문"
+            body="대화형 AI가 도구를 넘어 작업을 수행하는 에이전트가 된다면, 인간은 무엇을 맡게 될까?"
+            emphasized
+          />
+        </section>
+
+        {relatedTopics.length > 0 && (
+          <RelatedContentBlock relatedTopics={relatedTopics} onOpenTopic={onOpenTopic} />
         )}
       </article>
     </section>
